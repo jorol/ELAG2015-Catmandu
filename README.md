@@ -6,7 +6,7 @@ Catmandu Bootcamp at ELAG 2015
 
 __Title:__ Catmandu - a (meta)data toolkit
 
-__Name(s):__ ...
+__Name(s):__ Johann Rolschewski (Staatsbibliothek zu Berlin), Vitali Peil (UB Bielefeld)
 
 __Expected time slot:__ 6 hours
 
