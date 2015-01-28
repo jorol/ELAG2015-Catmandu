@@ -6,7 +6,7 @@ Catmandu Bootcamp at ELAG 2015
 
 __Title:__ Catmandu - a (meta)data toolkit
 
-__Name(s):__ Johann Rolschewski (Staatsbibliothek zu Berlin), Vitali Peil (UB Bielefeld)
+__Name(s):__ Johann Rolschewski (Staatsbibliothek zu Berlin), Vitali Peil (Bielefeld University Library)
 
 __Expected time slot:__ 6 hours
 
@@ -18,4 +18,4 @@ __Required:__ Laptop with VirtualBox <https://www.virtualbox.org/wiki/Downloads>
 
 __Programming experience:__ Not required.
 
-__Short description:__ Catmandu <http://librecat.org/Catmandu/> provides a suite of software modules to ease the import, storage, retrieval, export and transformation of (meta)data records. After a short introduction to Catmandu and its features, we will present the command line interface (CLI) and the domain specific language (DSL). Participants will be guided to get data via APIs, to transform data records to a common data model, to store/index it in Elasticsearch <http://www.elasticsearch.org/> or MongoDB <https://www.mongodb.org/>, to query data from stores and to export it to different formats.
+__Short description:__ Catmandu <http://librecat.org/Catmandu/> provides a suite of software modules to ease the import, storage, retrieval, export and transformation of (meta)data records. After a short introduction to Catmandu and its features, we will present the command line interface (CLI) and the domain specific language (DSL). Participants will be guided to get data from different sources via APIs, to transform data records to a common data model, to store/index it in Elasticsearch <http://www.elasticsearch.org/> or MongoDB <https://www.mongodb.org/>, to query data from stores and to export it to different formats.
