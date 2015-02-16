@@ -248,7 +248,7 @@ CHI
 
 DBI
 
-Elasticsearch
+ElasticSearch
 
 MongoDB
 
@@ -483,10 +483,10 @@ $ mongo
 > use marc
 > db.marc.find()
 
-$ catmandu import MARC --type RAW --fix ./shared/marc.fix to Elasticsearch 
+$ catmandu import MARC --type RAW --fix ./shared/marc.fix to ElasticSearch 
     --index_name marc --bag marc < ./shared/camel.mrc
 
-$ catmandu import MAB2 --fix ./shared/mab2rdf.fix to Elasticsearch 
+$ catmandu import MAB2 --fix ./shared/mab2rdf.fix to ElasticSearch 
     --index_name mab --bag mab < ./shared/journals_mab2.dat
 
 $ curl 'http://localhost:9200/mab/_search?q=*'
@@ -519,9 +519,9 @@ class: middle
 ```terminal
 $ catmandu export MongoDB --database_name mab --bag mab to JSON
 
-$ catmandu export Elasticsearch --index_name marc --bag marc to JSON
+$ catmandu export ElasticSearch --index_name marc --bag marc to JSON
 
-$ catmandu export Elasticsearch --index_name mab --bag mab 
+$ catmandu export ElasticSearch --index_name mab --bag mab 
     --query '_id:"http://example.org/1142708-5"'
 
 ```
@@ -535,7 +535,7 @@ catmandu count [-?hLq] [long options...]
 
 examples:
 
-catmandu count Elasticsearch --index_name shop --bag products 
+catmandu count ElasticSearch --index_name shop --bag products 
     --query 'brand:Acme'
 
 options:
@@ -555,11 +555,11 @@ $ catmandu count MongoDB --database_name mab --bag mab
 $ catmandu count MongoDB --database_name marc --bag marc 
     --query '{"dc.creator": "Wall, Larry."}'
 
-$ catmandu count Elasticsearch --index_name mab  --bag mab
-$ catmandu count Elasticsearch --index_name mab --bag mab 
+$ catmandu count ElasticSearch --index_name mab  --bag mab
+$ catmandu count ElasticSearch --index_name mab --bag mab 
     --query 'dc_title:"magazin"'
 
-$ catmandu count Elasticsearch --index_name marc --bag marc 
+$ catmandu count ElasticSearch --index_name marc --bag marc 
     --query 'dc.creator:"wall"'
 ```
 
@@ -572,7 +572,7 @@ catmandu delete [-?hLq] [long options...]
 
 examples:
 
-catmandu delete Elasticsearch --index_name items 
+catmandu delete ElasticSearch --index_name items 
     --bag book -q 'title:"Programming Perl"'
 
 options:
@@ -589,12 +589,12 @@ class: middle
 ```terminal
 $ catmandu delete MongoDB --database_name mab --bag mab
 
-$ catmandu delete Elasticsearch --index_name mab --bag mab
+$ catmandu delete ElasticSearch --index_name mab --bag mab
 
 $ catmandu delete MongoDB --database_name marc --bag marc 
     --query '{"dc.creator": "Wall, Larry."}'
 
-$ catmandu delete Elasticsearch --index_name mab --bag mab 
+$ catmandu delete ElasticSearch --index_name mab --bag mab 
     --query '_id:"http://example.org/1142708-5"'
 ```
 
@@ -608,7 +608,7 @@ catmandu move [-?hLqv] [long options...]
 examples:
 
 catmandu move MongoDB --database_name items --bag book 
-    to Elasticsearch --index_name items --bag book
+    to ElasticSearch --index_name items --bag book
 
 options:
 
@@ -624,16 +624,16 @@ class: middle
 ## CLI - move()
 
 ```terminal
-$ catmandu move MongoDB --database_name marc --bag marc to Elasticsearch 
+$ catmandu move MongoDB --database_name marc --bag marc to ElasticSearch 
     --index_name moved
 
 $ catmandu move MongoDB --database_name marc --bag marc 
     --query '{"dc.creator": "Wall, Larry."}' 
-    to Elasticsearch --index_name moved
+    to ElasticSearch --index_name moved
 
-$ catmandu move Elasticsearch --index_name mab --bag mab 
+$ catmandu move ElasticSearch --index_name mab --bag mab 
     --query '_id:"http://example.org/1142708-5"' 
-    to Elasticsearch --index_name selected --bag selected
+    to ElasticSearch --index_name selected --bag selected
 ```
 
 ---
@@ -660,28 +660,6 @@ catmandu data [-?hLqv] [long options...]
         --fix                fix expression(s) or fix file(s)
         --replace
         -v --verbose
-```
-
----
-class: middle
-## CLI - data()
-
-```terminal
-$ catmandu data --from-store MongoDB --from-database_name marc 
-    --from-bag marc --query '{"dc.creator": "Wall, Larry."}'
-
-$ catmandu data --from-store Elasticsearch --from-index_name marc 
-    --query 'dc.creator:"Wall, Larry."'
-
-$ catmandu data --from-store Elasticsearch --from-index_name mab 
-    --from-bag mab --cql-query 'publisher exact Heise'
-
-$ catmandu data --from-store Elasticsearch --from-index_name mab 
-    --from-bag mab --cql-query 'issued > 2009' --into-exporter YAML
-
-$ catmandu data --from-store Elasticsearch --from-index_name mab 
-    --from-bag mab --cql-query 'issued > 2009' --into-exporter CSV 
-    --fix 'retain_field("_id")'
 ```
 
 ---
@@ -713,7 +691,7 @@ store:
    options:
     database_name: mydb
   els:
-   package: Elasticsearch
+   package: ElasticSearch
    options:
     index_name: mydb
 
