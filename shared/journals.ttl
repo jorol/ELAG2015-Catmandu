@@ -1,0 +1,994 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix rda: <http://rdvocab.info/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix sf: <http://www.opengis.net/ont/sf#> .
+@prefix isbd: <http://iflastandards.info/ns/isbd/elements/> .
+@prefix gndo: <http://d-nb.info/standards/elementset/gnd#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix marcRole: <http://id.loc.gov/vocabulary/relators/> .
+@prefix lib: <http://purl.org/library/> .
+@prefix umbel: <http://umbel.org/umbel#> .
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+<http://ld.zdb-services.de/resource/5-x> a bibo:Periodical ;
+	dcterms:medium <http://rdvocab.info/termList/RDACarrierType/1044> ;
+	dc:identifier "(DE-101)010000011" , "(DE-600)5-x" , "(OColc)183277955" ;
+	dcterms:language <http://id.loc.gov/vocabulary/iso639-2/ger> ;
+	dc:title "A bis Z" ;
+	dcterms:contributor <http://d-nb.info/gnd/2028926-1> ;
+	rda:placeOfPublication "Bonn" ;
+	dc:publisher "Dt. Bundes-Verl." ;
+	rda:publicationStatement "Bonn : Dt. Bundes-Verl., 1969" ;
+	rda:precededBy <http://ld.zdb-services.de/resource/874-6> ;
+	rda:succeededBy <http://ld.zdb-services.de/resource/130385-5> ;
+	dcterms:subject <http://d-nb.info/gnd/4011890-3> , <http://d-nb.info/gnd/4066724-8> , <http://d-nb.info/gnd/4011890-3> ;
+	dcterms:issued "1969-1969" ;
+	rda:otherTitleInformation "ein Taschen- u. Nachschlagebuch über d. anderen Teil Deutschlands" ;
+	bibo:contributorList _:node18vrp7q99x1 .
+
+_:node18vrp7q99x1 a rdf:Seq ;
+	rdf:_1 <http://d-nb.info/gnd/2028926-1> .
+
+<http://ld.zdb-services.de/resource/7-3> a bibo:Periodical ;
+	dcterms:medium <http://rdvocab.info/termList/RDACarrierType/1044> ;
+	dc:identifier "(DE-101)01000002X" ;
+	bibo:issn "0070-7252" , "0375-2135" , "0375-2135" ;
+	dc:identifier "(DE-600)7-3" ;
+	bibo:coden "SMTFB" ;
+	dc:identifier "(OColc)224540449" ;
+	dcterms:language <http://id.loc.gov/vocabulary/iso639-2/ger> ;
+	dcterms:accrualPeriodicity <http://marc21rdf.info/terms/continuingfre%23%23> ;
+	dc:title "Faunistische Abhandlungen" ;
+	bibo:shortTitle "FAUN ABH (DRES)" ;
+	dcterms:contributor <http://d-nb.info/gnd/35521-5> ;
+	rda:placeOfPublication "Dresden" ;
+	dc:publisher "Museum für Tierkunde" ;
+	rda:publicationStatement "Dresden : Museum für Tierkunde, 1963" ;
+	dcterms:isFormatOf <http://ld.zdb-services.de/resource/2233959-0> ;
+	dc:relation <http://ld.zdb-services.de/data/2233959-0> ;
+	rda:precededBy <http://ld.zdb-services.de/resource/6068-9> , <http://ld.zdb-services.de/resource/35521-5> ;
+	dcterms:subject <http://d-nb.info/gnd/4219481-7> ;
+	dcterms:issued "1963-2008" ;
+	bibo:contributorList _:node18vrp7q99x2 .
+
+_:node18vrp7q99x2 a rdf:Seq ;
+	rdf:_1 <http://d-nb.info/gnd/35521-5> .
+
+<http://ld.zdb-services.de/resource/9-7> a bibo:Periodical ;
+	dcterms:medium <http://rdvocab.info/termList/RDACarrierType/1044> ;
+	dc:identifier "(DE-101)010000038" ;
+	bibo:issn "0070-7260" , "0070-7260" ;
+	dc:identifier "(DE-600)9-7" ;
+	bibo:coden "SMTMB" ;
+	dc:identifier "(OColc)643914482" ;
+	dcterms:language <http://id.loc.gov/vocabulary/iso639-2/ger> ;
+	dcterms:accrualPeriodicity <http://marc21rdf.info/terms/continuingfre%23%23> ;
+	dc:title "Malakologische Abhandlungen" ;
+	bibo:shortTitle "MALAKOL ABH (DRES)" , "Malakol. Abh." ;
+	dcterms:contributor <http://d-nb.info/gnd/35521-5> ;
+	rda:placeOfPublication "Dresden" ;
+	dc:publisher "Museum für Tierkunde" ;
+	rda:publicationStatement "Dresden : Museum für Tierkunde, 1964" ;
+	rda:precededBy <http://ld.zdb-services.de/resource/6068-9> , <http://ld.zdb-services.de/resource/35521-5> ;
+	rda:succeededBy <http://ld.zdb-services.de/resource/2280187-X> ;
+	dcterms:subject <http://d-nb.info/gnd/4219481-7> , <http://d-nb.info/gnd/4051176-5> , <http://d-nb.info/gnd/4060087-7> , <http://d-nb.info/gnd/4352566-0> ;
+	dcterms:issued "1964-2006" ;
+	bibo:contributorList _:node18vrp7q99x3 .
+
+_:node18vrp7q99x3 a rdf:Seq ;
+	rdf:_1 <http://d-nb.info/gnd/35521-5> .
+
+<http://ld.zdb-services.de/resource/10-3> a bibo:Periodical ;
+	dcterms:medium <http://rdvocab.info/termList/RDACarrierType/1044> ;
+	dc:identifier "(DE-101)010000046" , "(DE-600)10-3" , "(OColc)183215696" ;
+	dc:title "Bibliografia polarografica" ;
+	rda:placeOfPublication "Spoleto" ;
+	dcterms:isPartOf <http://ld.zdb-services.de/resource/205482-6> ;
+	rda:succeededBy <http://ld.zdb-services.de/resource/3564-6> ;
+	dcterms:issued "1949-1964" ;
+	dcterms:title "Bibliografia polarografica / P. 1, Elenco dei lavori e indice degli autori" .
+
+<http://ld.zdb-services.de/resource/12-7> a bibo:Periodical ;
+	dcterms:medium <http://rdvocab.info/termList/RDACarrierType/1044> ;
+	dc:identifier "(DE-101)010000054" ;
+	bibo:issn "0078-6799" , "0371-5264" ;
+	dc:identifier "(DE-600)12-7" ;
+	bibo:coden "TAOGA" ;
+	dc:identifier "(OColc)263588241" ;
+	dcterms:language <http://id.loc.gov/vocabulary/iso639-2/ger> ;
+	dcterms:accrualPeriodicity <http://marc21rdf.info/terms/continuingfre%23%23> ;
+	dc:title "Technisch-wissenschaftliche Abhandlungen der Osram-Gesellschaft" ;
+	bibo:shortTitle "Tech.-Wiss. Abh. Osram-Ges." ;
+	dcterms:contributor <http://d-nb.info/gnd/35536-7> ;
+	rda:placeOfPublication "Berlin" , "Göttingen" , "Heidelberg" ;
+	dc:publisher "Springer" ;
+	rda:publicationStatement "Heidelberg : Springer, 1943" ;
+	rda:precededBy <http://ld.zdb-services.de/resource/502428-6> , <http://ld.zdb-services.de/resource/10856-X> ;
+	dcterms:subject <http://d-nb.info/gnd/4035633-4> , <http://d-nb.info/gnd/4067488-5> ;
+	dcterms:issued "1943-1986" ;
+	bibo:contributorList _:node18vrp7q99x4 .
+
+_:node18vrp7q99x4 a rdf:Seq ;
+	rdf:_1 <http://d-nb.info/gnd/35536-7> .
+
+<http://ld.zdb-services.de/resource/13-9> a bibo:Periodical ;
+	dcterms:medium <http://rdvocab.info/termList/RDACarrierType/1044> ;
+	dc:identifier "(DE-101)010000062" ;
+	bibo:issn "0070-7287" , "0375-5231" , "0375-5231" ;
+	dc:identifier "(DE-600)13-9" ;
+	bibo:coden "ZASMA" ;
+	dc:identifier "(OColc)643926073" ;
+	dcterms:language <http://id.loc.gov/vocabulary/iso639-2/ger> , <http://id.loc.gov/vocabulary/iso639-2/eng> ;
+	dcterms:accrualPeriodicity <http://marc21rdf.info/terms/continuingfre%23%23> ;
+	dc:title "Zoologische Abhandlungen" ;
+	bibo:shortTitle "ZOOL ABH (DRESD)" ;
+	dcterms:contributor <http://d-nb.info/gnd/35521-5> ;
+	rda:placeOfPublication "Dresden" ;
+	dc:publisher "Museum für Tierkunde" ;
+	rda:publicationStatement "Dresden : Museum für Tierkunde, 1961" ;
+	dcterms:isFormatOf <http://ld.zdb-services.de/resource/2392089-0> ;
+	dc:relation <http://ld.zdb-services.de/data/2392089-0> ;
+	rda:precededBy <http://ld.zdb-services.de/resource/6068-9> , <http://ld.zdb-services.de/resource/35521-5> ;
+	rda:succeededBy <http://ld.zdb-services.de/resource/2383989-2> ;
+	dcterms:issued "1961-2006" ;
+	bibo:contributorList _:node18vrp7q99x5 .
+
+_:node18vrp7q99x5 a rdf:Seq ;
+	rdf:_1 <http://d-nb.info/gnd/35521-5> .
+
+<http://ld.zdb-services.de/resource/15-2> a bibo:Periodical ;
+	dcterms:medium <http://rdvocab.info/termList/RDACarrierType/1044> ;
+	dc:identifier "(DE-101)010000070" , "(DE-600)15-2" , "(OColc)310926585" ;
+	dcterms:language <http://id.loc.gov/vocabulary/iso639-2/eng> ;
+	dc:title "The American behavioral scientist" ;
+	rda:placeOfPublication "New York, NY" ;
+	dc:publisher "American Behavioral Scientist" ;
+	rda:publicationStatement "New York, NY : American Behavioral Scientist, 1965" ;
+	rda:placeOfPublication "Oxford [u.a.]" ;
+	rda:publicationStatement "Oxford [u.a.] : American Behavioral Scientist, 1965" ;
+	rda:placeOfPublication "Frankfurt, M." ;
+	rda:publicationStatement "Frankfurt, M. : American Behavioral Scientist, 1965" ;
+	dc:publisher "Pergamon Press" ;
+	rda:publicationStatement "Frankfurt, M. : Pergamon Press, 1965" ;
+	rda:succeededBy <http://ld.zdb-services.de/resource/1355410-4> ;
+	dcterms:issued "1965-1965" ;
+	dcterms:title "The American behavioral scientist, The ABS guide to recent publications in the social and behavioral sciences" .
+
+<http://ld.zdb-services.de/resource/16-4> a bibo:Periodical ;
+	dcterms:medium <http://rdvocab.info/termList/RDACarrierType/1044> ;
+	dc:identifier "(DE-101)010000089" ;
+	bibo:issn "0001-9895" ;
+	dc:identifier "(DE-600)16-4" , "(OColc)183277958" ;
+	dcterms:alternative "Bulletin analytique africaniste" ;
+	dc:title "African abstracts" ;
+	dcterms:contributor <http://d-nb.info/gnd/1005929-5> ;
+	rda:placeOfPublication "London" ;
+	dc:publisher "Internat. African Inst." ;
+	rda:publicationStatement "London : Internat. African Inst., 1950" ;
+	dcterms:isFormatOf <http://ld.zdb-services.de/resource/1084053-9> ;
+	dc:relation <http://ld.zdb-services.de/data/1084053-9> ;
+	dcterms:issued "1950-1972" ;
+	rda:otherTitleInformation "revue trimestr. d'études ethnologiques, sociales et linguistiques paraissant dans les périodiques du jour" ;
+	bibo:contributorList _:node18vrp7q99x6 .
+
+_:node18vrp7q99x6 a rdf:Seq ;
+	rdf:_1 <http://d-nb.info/gnd/1005929-5> .
+
+<http://ld.zdb-services.de/resource/17-6> a bibo:Periodical ;
+	dcterms:medium <http://rdvocab.info/termList/RDACarrierType/1044> ;
+	dc:identifier "(DE-101)010000097" ;
+	bibo:issn "0072-5730" ;
+	dc:identifier "(DE-600)17-6" , "(OColc)1143182" ;
+	dcterms:language <http://id.loc.gov/vocabulary/iso639-2/eng> ;
+	dc:title "Annual abstract of statistics" ;
+	dcterms:contributor <http://d-nb.info/gnd/35545-8> , <http://d-nb.info/gnd/4022153-2> ;
+	rda:placeOfPublication "London" ;
+	dc:publisher "HMSO" ;
+	rda:publicationStatement "London : HMSO, 1948" ;
+	rda:precededBy <http://ld.zdb-services.de/resource/127303-6> , <http://ld.zdb-services.de/resource/4022153-2> ;
+	rda:succeededBy <http://ld.zdb-services.de/resource/1361914-7> , <http://ld.zdb-services.de/resource/5176735-1> ;
+	dcterms:subject <http://d-nb.info/gnd/4022153-2> , <http://d-nb.info/gnd/4126610-9> ;
+	dcterms:issued "1948-1996" ;
+	bibo:contributorList _:node18vrp7q99x7 .
+
+_:node18vrp7q99x7 a rdf:Seq ;
+	rdf:_1 <http://d-nb.info/gnd/35545-8> ;
+	rdf:_2 <http://d-nb.info/gnd/4022153-2> .
+
+<http://ld.zdb-services.de/resource/18-8> a bibo:Periodical ;
+	dcterms:medium <http://rdvocab.info/termList/RDACarrierType/1044> ;
+	dc:identifier "(DE-101)010000100" ;
+	bibo:issn "0006-3169" ;
+	dc:identifier "(DE-600)18-8" ;
+	bibo:coden "BIABA" ;
+	dc:identifier "(OColc)183277963" ;
+	dcterms:language <http://id.loc.gov/vocabulary/iso639-2/eng> ;
+	dc:title "Biological abstracts" ;
+	bibo:shortTitle "Biol. Abstr." ;
+	rda:placeOfPublication "Philadelphia, Pa." ;
+	dc:publisher "Biological Abstracts" ;
+	rda:publicationStatement "Philadelphia, Pa. : Biological Abstracts, 1927" ;
+	dcterms:isPartOf <http://ld.zdb-services.de/resource/795326-4> , <http://ld.zdb-services.de/resource/1009521-4> ;
+	dcterms:hasPart <http://ld.zdb-services.de/resource/162322-9> ;
+	dcterms:isFormatOf <http://ld.zdb-services.de/resource/1101955-4> ;
+	dc:relation <http://ld.zdb-services.de/data/1101955-4> ;
+	dcterms:isFormatOf <http://ld.zdb-services.de/resource/2108051-3> ;
+	dc:relation <http://ld.zdb-services.de/data/2108051-3> ;
+	dcterms:isFormatOf <http://ld.zdb-services.de/resource/2188093-1> ;
+	dc:relation <http://ld.zdb-services.de/data/2188093-1> ;
+	dcterms:isFormatOf <http://ld.zdb-services.de/resource/1437061-x> ;
+	dc:relation <http://ld.zdb-services.de/data/1437061-x> ;
+	dcterms:isFormatOf <http://ld.zdb-services.de/resource/840708-3> ;
+	dc:relation <http://ld.zdb-services.de/data/840708-3> ;
+	dcterms:isFormatOf <http://ld.zdb-services.de/resource/840725-3> ;
+	dc:relation <http://ld.zdb-services.de/data/840725-3> ;
+	dcterms:isFormatOf <http://ld.zdb-services.de/resource/795326-4> ;
+	dc:relation <http://ld.zdb-services.de/data/795326-4> ;
+	dcterms:isFormatOf <http://ld.zdb-services.de/resource/1009521-4> ;
+	dc:relation <http://ld.zdb-services.de/data/1009521-4> ;
+	rda:precededBy <http://ld.zdb-services.de/resource/210064-2> , <http://ld.zdb-services.de/resource/210065-4> , <http://ld.zdb-services.de/resource/282104-7> ;
+	dcterms:issued "1927-" ;
+	rda:otherTitleInformation "BA ; publ. with coop. of individual biologists, biolog. industries, and biolog. journals generally. Covering the world's biolog. research literature" .
+
+<http://ld.zdb-services.de/resource/19-x> a bibo:Periodical ;
+	dcterms:medium <http://rdvocab.info/termList/RDACarrierType/1044> ;
+	dc:identifier "(DE-101)010000119" ;
+	bibo:issn "0009-2258" , "0097-6474" ;
+	dc:identifier "(DE-600)19-x" ;
+	bibo:coden "CHABA" , "CACICQ" ;
+	dc:identifier "(OColc)183277966" ;
+	dcterms:language <http://id.loc.gov/vocabulary/iso639-2/eng> ;
+	dc:title "Chemical abstracts" ;
+	bibo:shortTitle "Chem. Abstr." ;
+	dcterms:contributor <http://d-nb.info/gnd/853-9> ;
+	rda:placeOfPublication "Columbus, Ohio" ;
+	dcterms:hasPart <http://ld.zdb-services.de/resource/280357-4> , <http://ld.zdb-services.de/resource/280358-6> ;
+	dcterms:isFormatOf <http://ld.zdb-services.de/resource/1226046-0> ;
+	dc:relation <http://ld.zdb-services.de/data/1226046-0> ;
+	dcterms:isFormatOf <http://ld.zdb-services.de/resource/26363-1> ;
+	dc:relation <http://ld.zdb-services.de/data/26363-1> ;
+	dcterms:isFormatOf <http://ld.zdb-services.de/resource/1400963-8> ;
+	dc:relation <http://ld.zdb-services.de/data/1400963-8> ;
+	dcterms:isFormatOf <http://ld.zdb-services.de/resource/853-9> ;
+	dc:relation <http://ld.zdb-services.de/data/853-9> ;
+	dcterms:isFormatOf <http://ld.zdb-services.de/resource/2159254-8> ;
+	dc:relation <http://ld.zdb-services.de/data/2159254-8> ;
+	rda:precededBy <http://ld.zdb-services.de/resource/209916-0> ;
+	rda:succeededBy <http://ld.zdb-services.de/resource/1309338-1> , <http://ld.zdb-services.de/resource/2229301-2> ;
+	dcterms:subject <http://d-nb.info/gnd/4009816-3> , <http://d-nb.info/gnd/4006432-3> , <http://d-nb.info/gnd/4009816-3> ;
+	dcterms:issued "1907-2009" ;
+	rda:otherTitleInformation "key to the world's chemical literature ; publ. weekly by the American Chemical Society ; CA" ;
+	bibo:contributorList _:node18vrp7q99x8 .
+
+_:node18vrp7q99x8 a rdf:Seq ;
+	rdf:_1 <http://d-nb.info/gnd/853-9> .
+
+<http://ld.zdb-services.de/resource/20-6> a bibo:Periodical ;
+	dcterms:medium <http://rdvocab.info/termList/RDACarrierType/1044> ;
+	dc:identifier "(DE-101)010000127" , "(DE-600)20-6" , "(OColc)643509853" ;
+	dc:title "Abstracts of communications" ;
+	dcterms:contributor <http://d-nb.info/gnd/240964-1> , <http://d-nb.info/gnd/1030917-2> ;
+	rda:placeOfPublication "Copenhagen [u.a.]" ;
+	rda:succeededBy <http://ld.zdb-services.de/resource/6476-2> , <http://ld.zdb-services.de/resource/1030917-2> ;
+	dcterms:issued "1948-1963" ;
+	bibo:contributorList _:node18vrp7q99x9 .
+
+_:node18vrp7q99x9 a rdf:Seq ;
+	rdf:_1 <http://d-nb.info/gnd/240964-1> ;
+	rdf:_2 <http://d-nb.info/gnd/1030917-2> .
+
+<http://ld.zdb-services.de/resource/21-8> a bibo:Periodical ;
+	dcterms:medium <http://rdvocab.info/termList/RDACarrierType/1044> ;
+	dc:identifier "(DE-101)010000135" ;
+	bibo:issn "0001-3684" ;
+	dc:identifier "(DE-600)21-8" , "(OColc)224455600" ;
+	dc:title "Abstracts on criminology and penology" ;
+	rda:placeOfPublication "Deventer" ;
+	dc:publisher "Kluwer" ;
+	rda:publicationStatement "Deventer : Kluwer, 1969" ;
+	rda:precededBy <http://ld.zdb-services.de/resource/216594-6> ;
+	rda:succeededBy <http://ld.zdb-services.de/resource/282951-4> ;
+	dcterms:issued "1969-1979" ;
+	rda:otherTitleInformation "an internat. abstracting service covering the etiology of crime and juvenile delinquency, ... and the administration of justice" .
+
+<http://ld.zdb-services.de/resource/22-x> a bibo:Periodical ;
+	dcterms:medium <http://rdvocab.info/termList/RDACarrierType/1044> ;
+	dc:identifier "(DE-101)010000143" ;
+	bibo:issn "0011-3166" ;
+	dc:identifier "(DE-600)22-x" , "(OColc)1565597" ;
+	dc:title "Current abstracts of the Soviet press" ;
+	dcterms:contributor <http://d-nb.info/gnd/43033-X> , <http://d-nb.info/gnd/40535-8> ;
+	rda:placeOfPublication "New York, NY" ;
+	rda:succeededBy <http://ld.zdb-services.de/resource/1708-5> ;
+	dcterms:issued "1968-1970" ;
+	bibo:contributorList _:node18vrp7q99x10 .
+
+_:node18vrp7q99x10 a rdf:Seq ;
+	rdf:_1 <http://d-nb.info/gnd/43033-X> ;
+	rdf:_2 <http://d-nb.info/gnd/40535-8> .
+
+<http://ld.zdb-services.de/resource/23-1> a bibo:Periodical ;
+	dcterms:medium <http://rdvocab.info/termList/RDACarrierType/1044> ;
+	dc:identifier "(DE-101)010000151" ;
+	bibo:issn "0012-9917" ;
+	dc:identifier "(DE-600)23-1" , "(OColc)263588243" ;
+	dcterms:language <http://id.loc.gov/vocabulary/iso639-2/eng> ;
+	dc:title "Economic abstracts" ;
+	dcterms:contributor <http://d-nb.info/gnd/42120-0> , <http://d-nb.info/gnd/42121-2> ;
+	rda:placeOfPublication "The Hague" ;
+	dc:publisher "Nijhoff" ;
+	rda:publicationStatement "The Hague : Nijhoff, 1953" ;
+	dcterms:isFormatOf <http://ld.zdb-services.de/resource/125369-4> ;
+	dc:relation <http://ld.zdb-services.de/data/125369-4> ;
+	rda:succeededBy <http://ld.zdb-services.de/resource/130410-0> ;
+	dcterms:issued "1953-1975" ;
+	rda:otherTitleInformation "semi-monthly review of abstracts on economics, finance, trade and industry, management and labour" ;
+	bibo:contributorList _:node18vrp7q99x11 .
+
+_:node18vrp7q99x11 a rdf:Seq ;
+	rdf:_1 <http://d-nb.info/gnd/42120-0> ;
+	rdf:_2 <http://d-nb.info/gnd/42121-2> .
+
+<http://ld.zdb-services.de/resource/24-3> a bibo:Periodical ;
+	dcterms:medium <http://rdvocab.info/termList/RDACarrierType/1044> ;
+	dc:identifier "(DE-101)01000016X" ;
+	bibo:issn "0001-3587" ;
+	dc:identifier "(DE-600)24-3" , "(OColc)224477480" ;
+	dc:title "Abstracts of folklore studies" ;
+	rda:placeOfPublication "Austin, Tex." ;
+	dc:publisher "Soc." ;
+	rda:publicationStatement "Austin, Tex. : Soc., 1963" ;
+	dcterms:subject <http://d-nb.info/gnd/4078937-8> , <http://d-nb.info/gnd/4006432-3> ;
+	dcterms:issued "1963-1975" .
+
+<http://ld.zdb-services.de/resource/25-5> a bibo:Periodical ;
+	dcterms:medium <http://rdvocab.info/termList/RDACarrierType/1044> ;
+	dc:identifier "(DE-101)010000178" ;
+	bibo:issn "0016-7320" , "0268-7879" ;
+	dc:identifier "(DE-600)25-5" , "(OColc)705110483" ;
+	dc:title "Geographical abstracts" ;
+	rda:placeOfPublication "Norwich" ;
+	dc:publisher "Geo Abstracts" ;
+	rda:publicationStatement "Norwich : Geo Abstracts, 1966" ;
+	rda:precededBy <http://ld.zdb-services.de/resource/6073-2> ;
+	rda:succeededBy <http://ld.zdb-services.de/resource/184250-x> ;
+	rda:precededBy <http://ld.zdb-services.de/resource/184250-x> ;
+	rda:succeededBy <http://ld.zdb-services.de/resource/625098-1> ;
+	dcterms:subject <http://d-nb.info/gnd/4130684-3> , <http://d-nb.info/gnd/4048009-4> ;
+	dcterms:issued "1966-1988" ;
+	dcterms:title "Geographical abstracts / A, Landforms and the quaternary" .
+
+<http://ld.zdb-services.de/resource/26-7> a bibo:Periodical ;
+	dcterms:medium <http://rdvocab.info/termList/RDACarrierType/1044> ;
+	dc:identifier "(DE-101)010000186" ;
+	bibo:issn "0096-5316" ;
+	dc:identifier "(DE-600)26-7" ;
+	bibo:coden "ADENA" ;
+	dc:identifier "(OColc)231012230" ;
+	dcterms:language <http://id.loc.gov/vocabulary/iso639-2/eng> ;
+	dcterms:accrualPeriodicity <http://marc21rdf.info/terms/continuingfre%23%23> ;
+	dc:title "Advances in enzymology and related subjects of biochemistry" ;
+	bibo:shortTitle "Adv. Enzymol. Relat. Subj. Biochem." , "Adv. Enzymol." ;
+	rda:placeOfPublication "New York, NY [u.a.]" ;
+	dc:publisher "Interscience Publ." ;
+	rda:publicationStatement "New York, NY [u.a.] : Interscience Publ., 1943" ;
+	rda:precededBy <http://ld.zdb-services.de/resource/146-6> ;
+	rda:succeededBy <http://ld.zdb-services.de/resource/27-9> ;
+	dcterms:subject <http://d-nb.info/gnd/4006780-4> , <http://d-nb.info/gnd/4006777-4> ;
+	dcterms:issued "1943-1966" .
+
+<http://ld.zdb-services.de/resource/27-9> a bibo:Periodical ;
+	dcterms:medium <http://rdvocab.info/termList/RDACarrierType/1044> ;
+	dc:identifier "(DE-101)010000194" ;
+	bibo:issn "0065-258x" ;
+	dc:identifier "(DE-600)27-9" ;
+	bibo:coden "AERAA" ;
+	dc:identifier "(OColc)42314229" ;
+	dcterms:language <http://id.loc.gov/vocabulary/iso639-2/eng> ;
+	dcterms:accrualPeriodicity <http://marc21rdf.info/terms/continuingfre%23%23> ;
+	dc:title "Advances in enzymology and related areas of molecular biology" ;
+	bibo:shortTitle "Adv Enzymol" , "Adv. Enzymol. Relat. Areas Mol. Biol." ;
+	rda:placeOfPublication "Hoboken, NJ" ;
+	dc:publisher "Wiley" ;
+	rda:publicationStatement "Hoboken, NJ : Wiley, 1967" ;
+	dcterms:isFormatOf <http://ld.zdb-services.de/resource/2545444-4> ;
+	dc:relation <http://ld.zdb-services.de/data/2545444-4> ;
+	rda:precededBy <http://ld.zdb-services.de/resource/26-7> ;
+	dcterms:alternative "Advances in enzymology" ;
+	dcterms:issued "1967-" .
+
+<http://ld.zdb-services.de/resource/29-2> a bibo:Periodical ;
+	dcterms:medium <http://rdvocab.info/termList/RDACarrierType/1044> ;
+	dc:identifier "(DE-101)010000208" ;
+	bibo:issn "0020-8264" ;
+	dc:identifier "(DE-600)29-2" ;
+	bibo:coden "IPMAA" ;
+	dc:identifier "(OColc)631692441" ;
+	dcterms:language <http://id.loc.gov/vocabulary/iso639-2/eng> ;
+	dc:title "International pharmaceutical abstracts" ;
+	dcterms:contributor <http://d-nb.info/gnd/5191230-2> ;
+	rda:placeOfPublication "Philadelphia, Pa." ;
+	dc:publisher "Thomson Reuters" ;
+	rda:publicationStatement "Philadelphia, Pa. : Thomson Reuters, 1964" ;
+	dcterms:isFormatOf <http://ld.zdb-services.de/resource/2047598-6> ;
+	dc:relation <http://ld.zdb-services.de/data/2047598-6> ;
+	rda:succeededBy <http://ld.zdb-services.de/resource/2166261-7> ;
+	dcterms:issued "1964-2012" ;
+	rda:otherTitleInformation "IPA" ;
+	bibo:contributorList _:node18vrp7q99x12 .
+
+_:node18vrp7q99x12 a rdf:Seq ;
+	rdf:_1 <http://d-nb.info/gnd/5191230-2> .
+
+<http://ld.zdb-services.de/resource/30-9> a bibo:Periodical ;
+	dcterms:medium <http://rdvocab.info/termList/RDACarrierType/1044> ;
+	dc:identifier "(DE-101)010000216" ;
+	bibo:issn "0020-5818" ;
+	dc:identifier "(DE-600)30-9" ;
+	dc:title "International abstracts of biological sciences" ;
+	bibo:shortTitle "IABS" , "Int Abstr Biol Sci" ;
+	rda:placeOfPublication "London [u.a.]" ;
+	dc:publisher "Pergamon Pr." ;
+	rda:publicationStatement "London [u.a.] : Pergamon Pr., 1956" ;
+	rda:precededBy <http://ld.zdb-services.de/resource/6076-8> ;
+	rda:succeededBy <http://ld.zdb-services.de/resource/283572-1> ;
+	dcterms:issued "1956-1980" ;
+	rda:otherTitleInformation "a comprehensive survey of the world literature" .
+
+<http://ld.zdb-services.de/resource/31-0> a bibo:Periodical ;
+	dcterms:medium <http://rdvocab.info/termList/RDACarrierType/1044> ;
+	dc:identifier "(DE-101)010000224" ;
+	bibo:issn "0026-1130" ;
+	dc:identifier "(DE-600)31-0" ;
+	bibo:coden "MGEAA" ;
+	dc:identifier "(OColc)643510671" ;
+	dc:title "Meteorological and geoastrophysical abstracts" ;
+	bibo:shortTitle "Meteorol. Geoastrophys. Abstr." ;
+	rda:placeOfPublication "Littleton" ;
+	dc:publisher "Soc." ;
+	rda:publicationStatement "Littleton : Soc., 1960" ;
+	dcterms:hasPart <http://ld.zdb-services.de/resource/428702-2> , <http://ld.zdb-services.de/resource/2381645-4> , <http://ld.zdb-services.de/resource/2744794-7> ;
+	dcterms:isFormatOf <http://ld.zdb-services.de/resource/2205334-7> ;
+	dc:relation <http://ld.zdb-services.de/data/2205334-7> ;
+	rda:precededBy <http://ld.zdb-services.de/resource/416215-8> ;
+	dcterms:alternative "Meteorological & geoastrophysical abstracts" ;
+	dcterms:issued "1960-" .
+
+<http://ld.zdb-services.de/resource/33-4> a bibo:Periodical ;
+	dcterms:medium <http://rdvocab.info/termList/RDACarrierType/1044> ;
+	dc:identifier "(DE-101)010000232" ;
+	bibo:issn "0033-2887" , "0277-0091" ;
+	dc:identifier "(DE-600)33-4" , "(OColc)643746565" ;
+	dcterms:language <http://id.loc.gov/vocabulary/iso639-2/eng> ;
+	dc:title "Psychological abstracts" ;
+	dcterms:contributor <http://d-nb.info/gnd/959-3> ;
+	rda:placeOfPublication "Washington, DC" ;
+	dc:publisher "Assoc." ;
+	rda:publicationStatement "Washington, DC : Assoc., 1927" ;
+	dcterms:isFormatOf <http://ld.zdb-services.de/resource/2063485-7> ;
+	dc:relation <http://ld.zdb-services.de/data/2063485-7> ;
+	dcterms:isFormatOf <http://ld.zdb-services.de/resource/2023022-9> ;
+	dc:relation <http://ld.zdb-services.de/data/2023022-9> ;
+	dcterms:isFormatOf <http://ld.zdb-services.de/resource/1035218-1> ;
+	dc:relation <http://ld.zdb-services.de/data/1035218-1> ;
+	dcterms:subject <http://d-nb.info/gnd/4047704-6> , <http://d-nb.info/gnd/4006432-3> , <http://d-nb.info/gnd/4047704-6> ;
+	dcterms:issued "1927-" ;
+	rda:otherTitleInformation "nonevaluative summaries of the serial and book literature in psychology and related disciplines" ;
+	bibo:contributorList _:node18vrp7q99x13 .
+
+_:node18vrp7q99x13 a rdf:Seq ;
+	rdf:_1 <http://d-nb.info/gnd/959-3> .
+
+<http://ld.zdb-services.de/resource/36-x> a bibo:Periodical ;
+	dcterms:medium <http://rdvocab.info/termList/RDACarrierType/1044> ;
+	dc:identifier "(DE-101)010000240" , "(DE-600)36-x" , "(OColc)633264060" ;
+	dcterms:language <http://id.loc.gov/vocabulary/iso639-2/eng> ;
+	dc:title "Abstracts" ;
+	dcterms:contributor <http://d-nb.info/gnd/1345-6> ;
+	rda:placeOfPublication "New York, NY" ;
+	dcterms:issued "1962-1983" ;
+	bibo:contributorList _:node18vrp7q99x14 .
+
+_:node18vrp7q99x14 a rdf:Seq ;
+	rdf:_1 <http://d-nb.info/gnd/1345-6> .
+
+<http://ld.zdb-services.de/resource/37-1> a bibo:Periodical ;
+	dcterms:medium <http://rdvocab.info/termList/RDACarrierType/1044> ;
+	dc:identifier "(DE-101)010000259" ;
+	bibo:issn "0038-0202" ;
+	dc:identifier "(DE-600)37-1" ;
+	bibo:coden "SOABAT" ;
+	dc:identifier "(OColc)643521413" ;
+	dcterms:language <http://id.loc.gov/vocabulary/iso639-2/eng> ;
+	dc:title "Sociological abstracts" ;
+	dcterms:contributor <http://d-nb.info/gnd/140989-X> ;
+	rda:placeOfPublication "Bethesda, Md." ;
+	dc:publisher "Cambridge Scientific Abstracts" ;
+	rda:publicationStatement "Bethesda, Md. : Cambridge Scientific Abstracts, 1952" ;
+	dcterms:hasPart <http://ld.zdb-services.de/resource/783127-4> , <http://ld.zdb-services.de/resource/131263-7> , <http://ld.zdb-services.de/resource/210211-0> , <http://ld.zdb-services.de/resource/199606-x> , <http://ld.zdb-services.de/resource/2014785-5> , <http://ld.zdb-services.de/resource/715741-1> , <http://ld.zdb-services.de/resource/2014785-5> , <http://ld.zdb-services.de/resource/131482-8> , <http://ld.zdb-services.de/resource/2299566-3> ;
+	dcterms:isFormatOf <http://ld.zdb-services.de/resource/1144692-4> ;
+	dc:relation <http://ld.zdb-services.de/data/1144692-4> ;
+	dcterms:isFormatOf <http://ld.zdb-services.de/resource/1461937-4> ;
+	dc:relation <http://ld.zdb-services.de/data/1461937-4> ;
+	dcterms:isFormatOf <http://ld.zdb-services.de/resource/2032307-4> ;
+	dc:relation <http://ld.zdb-services.de/data/2032307-4> ;
+	dcterms:subject <http://d-nb.info/gnd/4055916-6> ;
+	dcterms:alternative "SA" ;
+	dcterms:issued "1952-" ;
+	bibo:contributorList _:node18vrp7q99x15 .
+
+_:node18vrp7q99x15 a rdf:Seq ;
+	rdf:_1 <http://d-nb.info/gnd/140989-X> .
+
+<http://ld.zdb-services.de/resource/38-3> a bibo:Periodical ;
+	dcterms:medium <http://rdvocab.info/termList/RDACarrierType/1044> ;
+	dc:identifier "(DE-101)010000267" , "(DE-600)38-3" ;
+	dc:title "Statistical abstract of Japan" ;
+	dcterms:contributor <http://d-nb.info/gnd/4028495-5> ;
+	rda:placeOfPublication "Tokyo" ;
+	dc:publisher "Research and Legislative Reference Dep. National Diet Library" ;
+	rda:publicationStatement "Tokyo : Research and Legislative Reference Dep. National Diet Library, 1950" ;
+	dcterms:alternative "Kokkaitōkei-teiyō" ;
+	dcterms:issued "1950-" ;
+	bibo:contributorList _:node18vrp7q99x16 .
+
+_:node18vrp7q99x16 a rdf:Seq ;
+	rdf:_1 <http://d-nb.info/gnd/4028495-5> .
+
+<http://ld.zdb-services.de/resource/39-5> a bibo:Periodical ;
+	dcterms:medium <http://rdvocab.info/termList/RDACarrierType/1044> ;
+	dc:identifier "(DE-101)010000275" ;
+	bibo:issn "0081-4741" ;
+	dc:identifier "(DE-600)39-5" , "(OColc)643624554" ;
+	dcterms:language <http://id.loc.gov/vocabulary/iso639-2/eng> ;
+	dc:title "Statistical abstract of the United States" ;
+	dcterms:contributor <http://d-nb.info/gnd/4078704-7> , <http://d-nb.info/gnd/43130-8> , <http://d-nb.info/gnd/39646-1> , <http://d-nb.info/gnd/1016791-2> , <http://d-nb.info/gnd/35623-2> ;
+	rda:placeOfPublication "Washington, DC" ;
+	dc:publisher "US Gov. Print. Off." ;
+	rda:publicationStatement "Washington, DC : US Gov. Print. Off., 1879" ;
+	dcterms:hasPart <http://ld.zdb-services.de/resource/41-3> , <http://ld.zdb-services.de/resource/40-1> , <http://ld.zdb-services.de/resource/801376-7> , <http://ld.zdb-services.de/resource/1606-8> , <http://ld.zdb-services.de/resource/766526-x> , <http://ld.zdb-services.de/resource/444123-0> ;
+	dcterms:isFormatOf <http://ld.zdb-services.de/resource/1354145-6> ;
+	dc:relation <http://ld.zdb-services.de/data/1354145-6> ;
+	dcterms:isFormatOf <http://ld.zdb-services.de/resource/4078704-7> ;
+	dc:relation <http://ld.zdb-services.de/data/4078704-7> ;
+	dcterms:isFormatOf <http://ld.zdb-services.de/resource/2174285-6> ;
+	dc:relation <http://ld.zdb-services.de/data/2174285-6> ;
+	dcterms:isFormatOf <http://ld.zdb-services.de/resource/4078704-7> ;
+	dc:relation <http://ld.zdb-services.de/data/4078704-7> ;
+	rda:succeededBy <http://ld.zdb-services.de/resource/2700025-4> ;
+	dcterms:subject <http://d-nb.info/gnd/4078704-7> , <http://d-nb.info/gnd/4056995-0> , <http://d-nb.info/gnd/4078704-7> ;
+	dcterms:issued "1879-2011" ;
+	rda:otherTitleInformation "the national data book" ;
+	bibo:contributorList _:node18vrp7q99x17 .
+
+_:node18vrp7q99x17 a rdf:Seq ;
+	rdf:_1 <http://d-nb.info/gnd/4078704-7> ;
+	rdf:_2 <http://d-nb.info/gnd/43130-8> ;
+	rdf:_3 <http://d-nb.info/gnd/39646-1> ;
+	rdf:_4 <http://d-nb.info/gnd/1016791-2> ;
+	rdf:_5 <http://d-nb.info/gnd/35623-2> .
+
+<http://ld.zdb-services.de/resource/40-1> a bibo:Periodical ;
+	dcterms:medium <http://rdvocab.info/termList/RDACarrierType/1044> ;
+	dc:identifier "(DE-101)010000283" , "(DE-600)40-1" , "(OColc)633361903" ;
+	dc:title "County and city data book" ;
+	dcterms:contributor <http://d-nb.info/gnd/43130-8> ;
+	rda:placeOfPublication "Washington, DC" ;
+	dc:publisher "US Gov. Print. Off." ;
+	rda:publicationStatement "Washington, DC : US Gov. Print. Off., 1952" ;
+	dcterms:isPartOf "A statistical abstract supplement" , <http://ld.zdb-services.de/resource/39-5> , <http://ld.zdb-services.de/resource/4078704-7> ;
+	dcterms:isFormatOf <http://ld.zdb-services.de/resource/1466404-5> ;
+	dc:relation <http://ld.zdb-services.de/data/1466404-5> ;
+	dcterms:isFormatOf <http://ld.zdb-services.de/resource/2602205-9> ;
+	dc:relation <http://ld.zdb-services.de/data/2602205-9> ;
+	rda:precededBy <http://ld.zdb-services.de/resource/967231-x> ;
+	dcterms:issued "1952-" ;
+	bibo:contributorList _:node18vrp7q99x18 .
+
+_:node18vrp7q99x18 a rdf:Seq ;
+	rdf:_1 <http://d-nb.info/gnd/43130-8> .
+
+<http://ld.zdb-services.de/resource/41-3> a bibo:Periodical ;
+	dcterms:medium <http://rdvocab.info/termList/RDACarrierType/1044> ;
+	dc:identifier "(DE-101)010000291" ;
+	bibo:issn "0073-2664" ;
+	dc:identifier "(DE-600)41-3" ;
+	dcterms:language <http://id.loc.gov/vocabulary/iso639-2/eng> ;
+	dc:title "Historical statistics of the United States" ;
+	dcterms:contributor <http://d-nb.info/gnd/4078704-7> , <http://d-nb.info/gnd/43130-8> , <http://d-nb.info/gnd/35623-2> ;
+	rda:placeOfPublication "Washington, DC" ;
+	dc:publisher "US Gov. Print. Off." ;
+	rda:publicationStatement "Washington, DC : US Gov. Print. Off., 1949" ;
+	dcterms:isPartOf <http://ld.zdb-services.de/resource/39-5> , <http://ld.zdb-services.de/resource/4078704-7> ;
+	dcterms:issued "1949-1976" ;
+	bibo:contributorList _:node18vrp7q99x19 .
+
+_:node18vrp7q99x19 a rdf:Seq ;
+	rdf:_1 <http://d-nb.info/gnd/4078704-7> ;
+	rdf:_2 <http://d-nb.info/gnd/43130-8> ;
+	rdf:_3 <http://d-nb.info/gnd/35623-2> .
+
+<http://ld.zdb-services.de/resource/43-7> a bibo:Periodical ;
+	dcterms:medium <http://rdvocab.info/termList/RDACarrierType/1044> ;
+	dc:identifier "(DE-101)010000305" , "(DE-600)43-7" , "(OColc)183192937" ;
+	dcterms:language <http://id.loc.gov/vocabulary/iso639-2/ger> ;
+	dc:title "Berlin in Zahlen" ;
+	dcterms:contributor <http://d-nb.info/gnd/4087295-6> ;
+	rda:placeOfPublication "Berlin" ;
+	dc:publisher "Das Neue Berlin" ;
+	rda:publicationStatement "Berlin : Das Neue Berlin, 1949" ;
+	rda:precededBy <http://ld.zdb-services.de/resource/49-8> , <http://ld.zdb-services.de/resource/4005728-8> ;
+	dcterms:subject <http://d-nb.info/gnd/4005728-8> ;
+	dcterms:issued "1949-1951" ;
+	bibo:contributorList _:node18vrp7q99x20 .
+
+_:node18vrp7q99x20 a rdf:Seq ;
+	rdf:_1 <http://d-nb.info/gnd/4087295-6> .
+
+<http://ld.zdb-services.de/resource/44-9> a bibo:Periodical ;
+	dcterms:medium <http://rdvocab.info/termList/RDACarrierType/1044> ;
+	dc:identifier "(DE-101)010000313" , "(DE-600)44-9" , "(OColc)224669575" ;
+	dcterms:language <http://id.loc.gov/vocabulary/iso639-2/ger> ;
+	dcterms:accrualPeriodicity <http://marc21rdf.info/terms/continuingfre%23%23> ;
+	dc:title "Academia Friburgensis" ;
+	dcterms:contributor <http://d-nb.info/gnd/40693-4> ;
+	rda:placeOfPublication "Freiburg, Schweiz" ;
+	dc:publisher "Hochschulverein" ;
+	rda:publicationStatement "Freiburg, Schweiz : Hochschulverein, 1942" ;
+	rda:succeededBy <http://ld.zdb-services.de/resource/210110-5> ;
+	dcterms:issued "1942-1965" ;
+	rda:otherTitleInformation "Hochschul-Nachrichten ; Organ d. Hochschulvereins Freiburg" ;
+	bibo:contributorList _:node18vrp7q99x21 .
+
+_:node18vrp7q99x21 a rdf:Seq ;
+	rdf:_1 <http://d-nb.info/gnd/40693-4> .
+
+<http://ld.zdb-services.de/resource/45-0> a bibo:Periodical ;
+	dcterms:medium <http://rdvocab.info/termList/RDACarrierType/1044> ;
+	dc:identifier "(DE-101)010000321" ;
+	bibo:issn "0001-4451" ;
+	dc:identifier "(DE-600)45-0" , "(OColc)643744792" ;
+	dcterms:language <http://id.loc.gov/vocabulary/iso639-2/ita> ;
+	dc:title "Accademie & biblioteche d'Italia" ;
+	dcterms:contributor <http://d-nb.info/gnd/36401-0> , <http://d-nb.info/gnd/5541509-X> , <http://d-nb.info/gnd/5536540-1> ;
+	rda:placeOfPublication "Roma" ;
+	dc:publisher "Gangemi" ;
+	rda:publicationStatement "Roma : Gangemi, 1927" ;
+	rda:placeOfPublication "Roma" ;
+	rda:publicationStatement "Roma : Gangemi, 1927" ;
+	dc:publisher "Ministero per i Beni e le Attività Culturali" ;
+	rda:publicationStatement "Roma : Ministero per i Beni e le Attività Culturali, 1927" ;
+	dcterms:isFormatOf <http://ld.zdb-services.de/resource/771446-4> ;
+	dc:relation <http://ld.zdb-services.de/data/771446-4> ;
+	dcterms:isFormatOf <http://ld.zdb-services.de/resource/1021617-0> ;
+	dc:relation <http://ld.zdb-services.de/data/1021617-0> ;
+	rda:precededBy <http://ld.zdb-services.de/resource/428870-1> ;
+	dcterms:issued "1927-" ;
+	rda:otherTitleInformation "trimestrale di cultura delle biblioteche e delle istituzioni culturali" ;
+	bibo:contributorList _:node18vrp7q99x22 .
+
+_:node18vrp7q99x22 a rdf:Seq ;
+	rdf:_1 <http://d-nb.info/gnd/36401-0> ;
+	rdf:_2 <http://d-nb.info/gnd/5541509-X> ;
+	rdf:_3 <http://d-nb.info/gnd/5536540-1> .
+
+<http://ld.zdb-services.de/resource/47-4> a bibo:Periodical ;
+	dcterms:medium <http://rdvocab.info/termList/RDACarrierType/1044> ;
+	dc:identifier "(DE-101)01000033X" , "(DE-600)47-4" , "(OColc)183277982" ;
+	dc:title "Accessions-Katalog" ;
+	dcterms:contributor <http://d-nb.info/gnd/1001512-7> , <http://d-nb.info/gnd/40689-2> ;
+	rda:placeOfPublication "Stockholm" ;
+	dc:publisher "Norstedt" ;
+	rda:publicationStatement "Stockholm : Norstedt, 1887" ;
+	rda:succeededBy <http://ld.zdb-services.de/resource/127061-8> , <http://ld.zdb-services.de/resource/127062-x> , <http://ld.zdb-services.de/resource/127066-7> ;
+	dcterms:issued "1887-1957" ;
+	rda:otherTitleInformation "red. av Bibliografiska Institut vid Kungl. Biblioteket i Stockholm ; Sveriges offentliga bibliotek" ;
+	bibo:contributorList _:node18vrp7q99x23 .
+
+_:node18vrp7q99x23 a rdf:Seq ;
+	rdf:_1 <http://d-nb.info/gnd/1001512-7> ;
+	rdf:_2 <http://d-nb.info/gnd/40689-2> .
+
+<http://ld.zdb-services.de/resource/49-8> a bibo:Periodical ;
+	dcterms:medium <http://rdvocab.info/termList/RDACarrierType/1044> ;
+	dc:identifier "(DE-101)010000348" , "(DE-600)49-8" , "(OColc)643631048" ;
+	dcterms:language <http://id.loc.gov/vocabulary/iso639-2/ger> ;
+	dc:title "Berlin in Zahlen" ;
+	dcterms:contributor <http://d-nb.info/gnd/4005728-8> ;
+	rda:placeOfPublication "Berlin" ;
+	dc:publisher "Selbstverl." ;
+	rda:publicationStatement "Berlin : Selbstverl., 1927" ;
+	dcterms:isPartOf <http://ld.zdb-services.de/resource/715798-8> , <http://ld.zdb-services.de/resource/4005728-8> ;
+	rda:succeededBy <http://ld.zdb-services.de/resource/43-7> , <http://ld.zdb-services.de/resource/4087295-6> , <http://ld.zdb-services.de/resource/6218-2> , <http://ld.zdb-services.de/resource/4069304-1> ;
+	dcterms:subject <http://d-nb.info/gnd/4005728-8> ;
+	dcterms:alternative "Kleines Berliner Taschenbuch" ;
+	dcterms:issued "1927-1947" ;
+	rda:otherTitleInformation "Taschenbuch" ;
+	bibo:contributorList _:node18vrp7q99x24 .
+
+_:node18vrp7q99x24 a rdf:Seq ;
+	rdf:_1 <http://d-nb.info/gnd/4005728-8> .
+
+<http://ld.zdb-services.de/resource/50-4> a bibo:Periodical ;
+	dcterms:medium <http://rdvocab.info/termList/RDACarrierType/1044> ;
+	dc:identifier "(DE-101)010000356" , "(DE-600)50-4" , "(OColc)631436014" ;
+	dcterms:language <http://id.loc.gov/vocabulary/iso639-2/eng> ;
+	dc:title "Public accounts of Canada" ;
+	dcterms:contributor <http://d-nb.info/gnd/4029456-0> , <http://d-nb.info/gnd/6132372-X> ;
+	rda:placeOfPublication "Ottawa" ;
+	dcterms:isFormatOf <http://ld.zdb-services.de/resource/2100192-3> ;
+	dc:relation <http://ld.zdb-services.de/data/2100192-3> ;
+	dcterms:isFormatOf <http://ld.zdb-services.de/resource/4029456-0> ;
+	dc:relation <http://ld.zdb-services.de/data/4029456-0> ;
+	rda:succeededBy <http://ld.zdb-services.de/resource/914773-1> ;
+	dcterms:issued "1894-" ;
+	rda:otherTitleInformation "for the fiscal year ended March 31 ..." ;
+	bibo:contributorList _:node18vrp7q99x25 .
+
+_:node18vrp7q99x25 a rdf:Seq ;
+	rdf:_1 <http://d-nb.info/gnd/4029456-0> ;
+	rdf:_2 <http://d-nb.info/gnd/6132372-X> .
+
+<http://ld.zdb-services.de/resource/51-6> a bibo:Periodical ;
+	dcterms:medium <http://rdvocab.info/termList/RDACarrierType/1044> ;
+	dc:identifier "(DE-101)010000364" , "(DE-600)51-6" ;
+	dc:title "Significant achievements in space science" ;
+	dcterms:contributor <http://d-nb.info/gnd/2294-9> ;
+	rda:placeOfPublication "Washington, DC" ;
+	dc:publisher "Scientific and Techn. Information Div., Off. of Techn. Utilization, NASA" ;
+	rda:publicationStatement "Washington, DC : Scientific and Techn. Information Div., Off. of Techn. Utilization, NASA, 1967" ;
+	rda:precededBy <http://ld.zdb-services.de/resource/6100-1> , <http://ld.zdb-services.de/resource/6101-3> , <http://ld.zdb-services.de/resource/6103-7> , <http://ld.zdb-services.de/resource/6102-5> , <http://ld.zdb-services.de/resource/6104-9> , <http://ld.zdb-services.de/resource/6099-9> , <http://ld.zdb-services.de/resource/6105-0> ;
+	dcterms:issued "1967-" ;
+	bibo:contributorList _:node18vrp7q99x26 .
+
+_:node18vrp7q99x26 a rdf:Seq ;
+	rdf:_1 <http://d-nb.info/gnd/2294-9> .
+
+<http://ld.zdb-services.de/resource/52-8> a bibo:Periodical ;
+	dcterms:medium <http://rdvocab.info/termList/RDACarrierType/1044> ;
+	dc:identifier "(DE-101)010000372" ;
+	bibo:issn "0003-2670" , "0378-4304" ;
+	dc:identifier "(DE-600)52-8" ;
+	bibo:coden "ACACA" , "CTOPD3" ;
+	dc:identifier "(OColc)263588251" ;
+	dcterms:language <http://id.loc.gov/vocabulary/iso639-2/eng> ;
+	dc:title "Analytica chimica acta" ;
+	bibo:shortTitle "Anal Chim Acta" , "ANALYTICA CHIM. ACTA (AMSTERDAM)" , "Anal. Chim. Acta Comput. Tech. & Optimiz. (Netherlands)" , "Anal Chim Ac" , "Anal Chimica Acta" , "Analyt Chim" ;
+	rda:placeOfPublication "Amsterdam [u.a.]" ;
+	dc:publisher "Elsevier" ;
+	rda:publicationStatement "Amsterdam [u.a.] : Elsevier, 1947" ;
+	dcterms:isFormatOf <http://ld.zdb-services.de/resource/1483436-4> ;
+	dc:relation <http://ld.zdb-services.de/data/1483436-4> ;
+	rda:precededBy <http://ld.zdb-services.de/resource/224351-9> ;
+	dcterms:subject <http://d-nb.info/gnd/4129906-1> , <http://d-nb.info/gnd/4067488-5> , <http://d-nb.info/gnd/4129906-1> ;
+	dcterms:issued "1947-" ;
+	rda:otherTitleInformation "an international journal devoted to all branches of analytical chemistry" .
+
+<http://ld.zdb-services.de/resource/53-x> a bibo:Periodical ;
+	dcterms:medium <http://rdvocab.info/termList/RDACarrierType/1044> ;
+	dc:identifier "(DE-101)010000380" ;
+	bibo:issn "0001-5180" ;
+	dc:identifier "(DE-600)53-x" ;
+	bibo:coden "ACATA" ;
+	dc:identifier "(OColc)168552528" ;
+	dcterms:language <http://id.loc.gov/vocabulary/iso639-2/eng> ;
+	dcterms:accrualPeriodicity <http://marc21rdf.info/terms/continuingfre%23%23> ;
+	dc:title "Acta anatomica" ;
+	bibo:shortTitle "Acta Anat (Basel)" , "Acta Anat." , "Act Anatom" ;
+	rda:placeOfPublication "Basel [u.a.]" ;
+	dc:publisher "Karger" ;
+	rda:publicationStatement "Basel [u.a.] : Karger, 1945" ;
+	dcterms:hasPart <http://ld.zdb-services.de/resource/217754-7> ;
+	dcterms:isFormatOf <http://ld.zdb-services.de/resource/1481836-x> ;
+	dc:relation <http://ld.zdb-services.de/data/1481836-x> ;
+	rda:precededBy <http://ld.zdb-services.de/resource/501850-x> ;
+	rda:succeededBy <http://ld.zdb-services.de/resource/1468141-9> ;
+	dcterms:subject <http://d-nb.info/gnd/4001895-7> , <http://d-nb.info/gnd/4025092-1> , <http://d-nb.info/gnd/4014562-1> , <http://d-nb.info/gnd/4070177-3> ;
+	dcterms:issued "1945-1998" ;
+	rda:otherTitleInformation "internat. archives of anatomy, histology, embryology and cytology" .
+
+<http://ld.zdb-services.de/resource/54-1> a bibo:Periodical ;
+	dcterms:medium <http://rdvocab.info/termList/RDACarrierType/1044> ;
+	dc:identifier "(DE-101)010000399" ;
+	bibo:issn "0044-5975" ;
+	dc:identifier "(DE-600)54-1" , "(OColc)263588253" ;
+	dc:title "Acta antiqua Academiae Scientiarum Hungaricae" ;
+	dcterms:contributor <http://d-nb.info/gnd/35661-X> ;
+	rda:placeOfPublication "Budapest" ;
+	dc:publisher "Akad. Kiadó" ;
+	rda:publicationStatement "Budapest : Akad. Kiadó, 1951" ;
+	dcterms:hasPart <http://ld.zdb-services.de/resource/160037-0> , <http://ld.zdb-services.de/resource/35661-X> ;
+	dcterms:isFormatOf <http://ld.zdb-services.de/resource/2110476-1> ;
+	dc:relation <http://ld.zdb-services.de/data/2110476-1> ;
+	dcterms:isFormatOf <http://ld.zdb-services.de/resource/35661-X> ;
+	dc:relation <http://ld.zdb-services.de/data/35661-X> ;
+	dcterms:alternative "Acta antiqua Hungarica" ;
+	dcterms:issued "1951-" ;
+	rda:otherTitleInformation "a Magyar Tudományos Akadémia klasszika-filológiai közleményei" ;
+	bibo:contributorList _:node18vrp7q99x27 .
+
+_:node18vrp7q99x27 a rdf:Seq ;
+	rdf:_1 <http://d-nb.info/gnd/35661-X> .
+
+<http://ld.zdb-services.de/resource/55-3> a bibo:Series ;
+	dcterms:medium <http://rdvocab.info/termList/RDACarrierType/1044> ;
+	dc:identifier "(DE-101)010000402" ;
+	bibo:issn "0065-0900" ;
+	dc:identifier "(DE-600)55-3" , "(OColc)310926785" ;
+	dc:title "Acta ad archaeologiam et artium historiam pertinentia" ;
+	rda:placeOfPublication "Roma" ;
+	dc:publisher "Bardi" ;
+	rda:publicationStatement "Roma : Bardi, 1962" ;
+	rda:succeededBy <http://ld.zdb-services.de/resource/778937-3> , <http://ld.zdb-services.de/resource/2265066-0> ;
+	dcterms:alternative "Acta Norvegiae" ;
+	dcterms:issued "1962-2001" ;
+	dcterms:title "Acta ad archaeologiam et artium historiam pertinentia, Series in 4°" .
+
+<http://ld.zdb-services.de/resource/56-5> a bibo:Periodical ;
+	dcterms:medium <http://rdvocab.info/termList/RDACarrierType/1044> ;
+	dc:identifier "(DE-101)010000410" ;
+	bibo:issn "0001-5210" ;
+	dc:identifier "(DE-600)56-5" ;
+	bibo:coden "ACGCB" ;
+	dc:identifier "(OColc)643585386" ;
+	dcterms:language <http://id.loc.gov/vocabulary/iso639-2/ger> , <http://id.loc.gov/vocabulary/iso639-2/eng> ;
+	dc:title "Acta archaeologica Academiae Scientiarum Hungaricae" ;
+	bibo:shortTitle "ACTA ARCHAEOL ACAD SCI HUNG" , "ACTAARCHHUNG" ;
+	dcterms:contributor <http://d-nb.info/gnd/35661-X> ;
+	rda:placeOfPublication "Budapest" ;
+	dc:publisher "Akad. Kiad'o" ;
+	rda:publicationStatement "Budapest : Akad. Kiad'o, 1951" ;
+	dcterms:hasPart <http://ld.zdb-services.de/resource/160037-0> , <http://ld.zdb-services.de/resource/35661-X> ;
+	dcterms:isFormatOf <http://ld.zdb-services.de/resource/2110460-8> ;
+	dc:relation <http://ld.zdb-services.de/data/2110460-8> ;
+	dcterms:isFormatOf <http://ld.zdb-services.de/resource/35661-X> ;
+	dc:relation <http://ld.zdb-services.de/data/35661-X> ;
+	dcterms:subject <http://d-nb.info/gnd/4078541-5> , <http://d-nb.info/gnd/4002827-6> ;
+	dcterms:alternative "Acta archaeologica" ;
+	dcterms:issued "1951-" ;
+	rda:otherTitleInformation "AArch" ;
+	bibo:contributorList _:node18vrp7q99x28 .
+
+_:node18vrp7q99x28 a rdf:Seq ;
+	rdf:_1 <http://d-nb.info/gnd/35661-X> .
+
+<http://ld.zdb-services.de/resource/57-7> a bibo:Periodical ;
+	dcterms:medium <http://rdvocab.info/termList/RDACarrierType/1044> ;
+	dc:identifier "(DE-101)010000429" ;
+	bibo:issn "0065-1036" ;
+	dc:identifier "(DE-600)57-7" ;
+	bibo:coden "AARIA" ;
+	dc:identifier "(OColc)224483243" ;
+	dcterms:language <http://id.loc.gov/vocabulary/iso639-2/pol> ;
+	dc:title "Acta arithmetica" ;
+	bibo:shortTitle "Acta Arith." ;
+	dcterms:contributor <http://d-nb.info/gnd/2014488-X> ;
+	rda:placeOfPublication "Warszawa" ;
+	dc:publisher "Instytut Matematyczny" ;
+	rda:publicationStatement "Warszawa : Instytut Matematyczny, 1936" ;
+	dcterms:isFormatOf <http://ld.zdb-services.de/resource/2043855-2> ;
+	dc:relation <http://ld.zdb-services.de/data/2043855-2> ;
+	dcterms:subject <http://d-nb.info/gnd/4037944-9> , <http://d-nb.info/gnd/4067488-5> ;
+	dcterms:issued "1936-" ;
+	bibo:contributorList _:node18vrp7q99x29 .
+
+_:node18vrp7q99x29 a rdf:Seq ;
+	rdf:_1 <http://d-nb.info/gnd/2014488-X> .
+
+<http://ld.zdb-services.de/resource/58-9> a bibo:Periodical ;
+	dcterms:medium <http://rdvocab.info/termList/RDACarrierType/1044> ;
+	dc:identifier "(DE-101)010000437" ;
+	bibo:issn "0004-6205" ;
+	dc:identifier "(DE-600)58-9" ;
+	bibo:coden "ASACA" ;
+	dc:identifier "(OColc)231028170" ;
+	dcterms:language <http://id.loc.gov/vocabulary/iso639-2/ger> ;
+	dcterms:accrualPeriodicity <http://marc21rdf.info/terms/continuingfre%23b> , <http://marc21rdf.info/terms/continuingfre%23q> ;
+	dc:title "Astronautica acta" ;
+	bibo:shortTitle "Astronaut. Acta" , "Astronaut. Acta (GB)" ;
+	dcterms:contributor <http://d-nb.info/gnd/1000608-4> , <http://d-nb.info/gnd/1016447-9> ;
+	rda:placeOfPublication "New York, NY [u.a.]" ;
+	dc:publisher "Pergamon Press" ;
+	rda:publicationStatement "New York, NY [u.a.] : Pergamon Press, 1955" ;
+	dcterms:hasPart <http://ld.zdb-services.de/resource/1126155-9> , <http://ld.zdb-services.de/resource/5058092-9> ;
+	rda:succeededBy <http://ld.zdb-services.de/resource/125946-5> ;
+	dcterms:alternative "Journal of the International Academy of Astronautics" ;
+	dcterms:issued "1955-1973" ;
+	rda:otherTitleInformation "offizielles Organ d. Internationalen Astronautischen Föderation" ;
+	bibo:contributorList _:node18vrp7q99x30 .
+
+_:node18vrp7q99x30 a rdf:Seq ;
+	rdf:_1 <http://d-nb.info/gnd/1000608-4> ;
+	rdf:_2 <http://d-nb.info/gnd/1016447-9> .
+
+<http://ld.zdb-services.de/resource/60-7> a bibo:Periodical ;
+	dcterms:medium <http://rdvocab.info/termList/RDACarrierType/1044> ;
+	dc:identifier "(DE-101)010000445" ;
+	bibo:issn "0006-3002" , "0005-2728" , "0005-2736" , "0304-4165" , "0167-4838" , "1388-1981" , "0167-4889" , "0167-4781" , "0304-419X" , "1570-9639" , "0925-4439" , "1874-9399" ;
+	dc:identifier "(DE-600)60-7" ;
+	bibo:coden "BBACA" ;
+	dc:identifier "(OColc)183277993" ;
+	dcterms:language <http://id.loc.gov/vocabulary/iso639-2/eng> ;
+	dc:title "Biochimica et biophysica acta" ;
+	bibo:shortTitle "Biochim. Biophys. Acta" ;
+	rda:placeOfPublication "Amsterdam [u.a.]" ;
+	dc:publisher "Elsevier" ;
+	rda:publicationStatement "Amsterdam [u.a.] : Elsevier, 1947" ;
+	dcterms:isFormatOf <http://ld.zdb-services.de/resource/1434539-0> ;
+	dc:relation <http://ld.zdb-services.de/data/1434539-0> ;
+	dcterms:isFormatOf <http://ld.zdb-services.de/resource/1460387-1> ;
+	dc:relation <http://ld.zdb-services.de/data/1460387-1> ;
+	rda:precededBy <http://ld.zdb-services.de/resource/282711-6> , <http://ld.zdb-services.de/resource/283444-3> , <http://ld.zdb-services.de/resource/192424-2> , <http://ld.zdb-services.de/resource/840755-1> , <http://ld.zdb-services.de/resource/282393-7> , <http://ld.zdb-services.de/resource/282512-0> , <http://ld.zdb-services.de/resource/195188-9> , <http://ld.zdb-services.de/resource/283435-2> , <http://ld.zdb-services.de/resource/283437-6> ;
+	dcterms:subject <http://d-nb.info/gnd/4006891-2> , <http://d-nb.info/gnd/4067488-5> , <http://d-nb.info/gnd/4006777-4> , <http://d-nb.info/gnd/4067488-5> ;
+	dcterms:issued "1947-" ;
+	rda:otherTitleInformation "BBA ; international journal of biochemistry, biophysics and molecular biology" .
+
+<http://ld.zdb-services.de/resource/62-0> a bibo:Periodical ;
+	dcterms:medium <http://rdvocab.info/termList/RDACarrierType/1044> ;
+	dc:identifier "(DE-101)010000453" ;
+	bibo:issn "0001-5318" ;
+	dc:identifier "(DE-600)62-0" ;
+	bibo:coden "ABMGA" ;
+	dc:identifier "(OColc)231015251" ;
+	dcterms:language <http://id.loc.gov/vocabulary/iso639-2/ger> ;
+	dc:title "Acta biologica et medica Germanica" ;
+	bibo:shortTitle "Acta biol. med. germ" , "Acta Biol. Med. Ger." ;
+	rda:placeOfPublication "Berlin" ;
+	dc:publisher "Akad.-Verl." ;
+	rda:publicationStatement "Berlin : Akad.-Verl., 1958" ;
+	rda:succeededBy <http://ld.zdb-services.de/resource/283559-9> ;
+	dcterms:issued "1958-1982" ;
+	rda:otherTitleInformation "Zeitschr. f. funktionelle Biowissenschaften" .
+
+<http://ld.zdb-services.de/resource/63-2> a bibo:Periodical ;
+	dcterms:medium <http://rdvocab.info/termList/RDACarrierType/1044> ;
+	dc:identifier "(DE-101)010000461" ;
+	bibo:issn "0001-5342" ;
+	dc:identifier "(DE-600)63-2" ;
+	bibo:coden "ABIOA" , "ABIOAN" ;
+	dc:identifier "(OColc)263588256" ;
+	dcterms:language <http://id.loc.gov/vocabulary/iso639-2/lat> , <http://id.loc.gov/vocabulary/iso639-2/dut> ;
+	dc:title "Acta biotheoretica" ;
+	bibo:shortTitle "Acta Biotheor (Leiden)" , "Acta Biotheor." ;
+	dcterms:contributor <http://d-nb.info/gnd/2018410-4> ;
+	rda:placeOfPublication "Dordrecht [u.a.]" ;
+	dc:publisher "Springer" ;
+	rda:publicationStatement "Dordrecht [u.a.] : Springer, 1935" ;
+	dcterms:isPartOf "Geschriften van de Prof. Dr. Jan van der Hoeven Stichting voor Theoretische Biologie van Dier en Mensch : Ser. A" , "Geschriften van de Prof. Dr. Jan van der Hoeven Stichting voor Theoretische Biologie van Dier en Mensch : Ser. B" ;
+	dcterms:hasPart <http://ld.zdb-services.de/resource/210265-1> , <http://ld.zdb-services.de/resource/280735-x> ;
+	dcterms:isFormatOf <http://ld.zdb-services.de/resource/1478105-0> ;
+	dc:relation <http://ld.zdb-services.de/data/1478105-0> ;
+	rda:precededBy <http://ld.zdb-services.de/resource/918-0> ;
+	dcterms:issued "1935-" ;
+	bibo:contributorList _:node18vrp7q99x31 .
+
+_:node18vrp7q99x31 a rdf:Seq ;
+	rdf:_1 <http://d-nb.info/gnd/2018410-4> .
+
+<http://ld.zdb-services.de/resource/64-4> a bibo:Periodical ;
+	dcterms:medium <http://rdvocab.info/termList/RDACarrierType/1044> ;
+	dc:identifier "(DE-101)01000047X" ;
+	bibo:issn "0001-5393" , "0904-213x" ;
+	dc:identifier "(DE-600)64-4" ;
+	bibo:coden "ACSAA" ;
+	dc:identifier "(OColc)224457545" ;
+	dc:title "Acta chemica Scandinavica" ;
+	bibo:shortTitle "Acta Chem. Scand." ;
+	rda:placeOfPublication "Copenhagen" ;
+	dc:publisher "Munksgaard" ;
+	rda:publicationStatement "Copenhagen : Munksgaard, 1947" ;
+	dcterms:isFormatOf <http://ld.zdb-services.de/resource/2432672-0> ;
+	dc:relation <http://ld.zdb-services.de/data/2432672-0> ;
+	rda:succeededBy <http://ld.zdb-services.de/resource/125033-4> ;
+	rda:precededBy <http://ld.zdb-services.de/resource/125033-4> ;
+	rda:succeededBy <http://ld.zdb-services.de/resource/125034-6> ;
+	rda:precededBy <http://ld.zdb-services.de/resource/125034-6> ;
+	rda:succeededBy <http://ld.zdb-services.de/resource/1017515-5> , <http://ld.zdb-services.de/resource/1081648-3> , <http://ld.zdb-services.de/resource/2001408-9> , <http://ld.zdb-services.de/resource/2001411-9> ;
+	dcterms:subject <http://d-nb.info/gnd/4009816-3> , <http://d-nb.info/gnd/4067488-5> ;
+	dcterms:issued "1947-1999" ;
+	rda:otherTitleInformation "publ. by chemical societies in Denmark, Finland, Norway and Sweden" .

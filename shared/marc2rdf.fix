@@ -1,0 +1,8 @@
+marc_map('001','_id');
+prepend('_id','http://example.org/');
+marc_map('245ab','dc:title', -join=>' ');
+replace_all('dc:title',' /.*$','');
+marc_map('700a','dc:creator.$append');
+replace_all('dc:creator.*','\.$','');
+add_field('a','edm:Book');
+remove_field('record');
