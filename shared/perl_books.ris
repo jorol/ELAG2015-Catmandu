@@ -1,4 +1,410 @@
 TY  - BOOK
+AU  - Schwartz, Randal L.
+A3  - Phoenix, Tom
+A3  - Lang, Jørgen W.
+TI  - Einführung in Perl
+KW  - Perl
+KW  - Perl 5.6
+PY  - 2003
+ET  - [Dt. Ausg.] der 3. Aufl., 2. korr. Nachdr.
+ID  - gbv_39103880X
+LA  - ger
+SP  - XIV, 352 S
+SP  - 23 cm
+PB  - Beijing [u.a.] : O'Reilly
+SN  - 3897211475
+ER  - 
+
+TY  - BOOK
+AU  - Patwardhan, Nate
+A3  - Irving, Clay
+A3  - Grote, Eike
+TI  - Programmieren mit Perl-Modulen
+KW  - Perl
+KW  - Modul
+PY  - 1999
+ET  - 1. Aufl.
+ID  - gbv_249285762
+LA  - ger
+SP  - XVI, 522 S.
+SP  - Ill., graph. Darst.
+SP  - 1 CD-ROM (12 cm)
+PB  - Beijing [u.a.] : O'Reilly
+N1  - CD-ROM-Beil u.d.T.: Comprehensive Perl Archive Network : (CPAN-Kopie vom 7. November 1998) ; Build 'n' Play (BnP), Version 2.1.0
+SN  - 3897211084
+ER  - 
+
+TY  - BOOK
+AU  - Schwartz, Randal L.
+A3  - Phoenix, Tom
+A3  - Lang, Jørgen W.
+TI  - Einführung in Perl
+KW  - Perl
+KW  - Perl 5.6
+PY  - 2002
+ET  - [Dt. Ausg.] der 3. Aufl., 1. korr. Nachdr.
+ID  - gbv_367161508
+LA  - ger
+SP  - XIV, 352 S
+SP  - 23 cm
+PB  - Beijing [u.a.] : O'Reilly
+SN  - 3897211475
+ER  - 
+
+TY  - BOOK
+AU  - Schwartz, Randal L. 1961-
+A3  - Phoenix, Tom
+TI  - Einführung in Perl
+KW  - Perl
+KW  - Perl 5.6
+PY  - 2002
+ET  - 3. Aufl.
+ID  - b3kat_BV014063437
+LA  - ger
+SP  - XIV, 352 S.
+SP  - Ill.
+PB  - Beijing [u.a.] : O'Reilly
+SN  - 3897211475
+ER  - 
+
+TY  - BOOK
+AU  - Stein, Lincoln D.
+TI  - Netzwerkprogrammierung mit Perl
+KW  - Rechnernetz
+KW  - Programmierung
+KW  - Perl
+KW  - Perl
+KW  - Netzwerk
+KW  - Programmierung
+PY  - 2002
+ID  - b3kat_BV014393461
+LA  - ger
+SP  - 806 S.
+PB  - München [u.a.] : Addison-Wesley
+SN  - 3827319684
+ER  - 
+
+TY  - BOOK
+AU  - Patwardhan, Nathan
+A3  - Siever, Ellen
+A3  - Spainhour, Stephen
+TI  - Perl in a nutshell
+KW  - Perl
+KW  - Befehlsvorrat
+KW  - Verzeichnis
+PY  - 2003
+ET  - Dt. Ausg., 2 Aufl.
+ID  - b3kat_BV016972188
+SP  - XX, 774 S.
+PB  - Beijing [u.a.] : O'Reilly
+SN  - 3897213389
+ER  - 
+
+TY  - BOOK
+AU  - Christiansen, Tom
+A3  - Torkington, Nathan
+TI  - Perl cookbook : [solutions & examples for perl programmers]
+KW  - Perl
+PY  - 2003
+ET  - 2. ed.
+ID  - b3kat_BV017124746
+SP  - XXXIV, 927 S.
+SP  - 24 cm
+PB  - Beijing ; Cambridge ; Farnham ; Köln ; Paris ; Sebastopol ; Teip : O'Reilly
+SN  - 0596003137
+ER  - 
+
+TY  - BOOK
+AU  - Schwartz, Randal L.
+A3  - Phoenix, Tom
+A3  - Foy, Brian D.
+TI  - Learning Perl : [covers Perl 5.10]
+KW  - Perl
+PY  - 2008
+ET  - 5th ed
+ID  - gbv_565595962
+LA  - eng
+SP  - XVIII, 328 S
+SP  - 24 cm
+PB  - Beijing [u.a.] : O'Reilly
+N1  - Includes index
+N1  - Previous ed.: 2005
+SN  - 0596520107 (pbk)
+SN  - 9780596520106 (pbk)
+ER  - 
+
+TY  - BOOK
+AU  - Christiansen, Tom
+A3  - Torkington, Nathan
+TI  - Perl-Kochbuch
+KW  - Perl
+PY  - 1999
+ET  - 1. Aufl., 1. korrigierter Nachdr., dt. Ausg.
+ID  - b3kat_BV012883821
+LA  - ger
+SP  - XXXIV, 798 S.
+PB  - Beijing [u.a.] : O'Reilly
+SN  - 3897211408
+ER  - 
+
+TY  - BOOK
+AU  - Lemay, Laura
+A3  - Alm, Petra
+TI  - Perl in 21 Tagen : Schritt für Schritt zum Programmierprofi ; viele nützliche Beispiele zu der mächtigen plattformübergreifenden Scriptsprache ; aktuell bis Perl 5.005
+KW  - Perl
+PY  - 2000
+ID  - gbv_303736305
+LA  - ger
+SP  - 795 S
+SP  - graph Darst
+SP  - 1 CD-ROM; 1 Wochenplan
+SP  - 25 cm
+PB  - München : Markt&Technik
+T3  - ... in 21 Tagen
+SN  - 3827220386
+ER  - 
+
+TY  - BOOK
+AU  - Wall, Larry 1954-
+A3  - Christiansen, Tom
+A3  - Schwartz, Randal L. 1961-
+TI  - Programming Perl : [covers Perl 5]
+KW  - Perl
+PY  - 1996
+ET  - 2. ed.
+ID  - b3kat_BV011023702
+SP  - XXI, 645 S.
+PB  - Cambridge [u.a.] : O'Reilly
+T3  - Programming
+SN  - 1565921496
+ER  - 
+
+TY  - BOOK
+AU  - Schwartz, Randal L. 1961-
+A3  - Christiansen, Tom
+TI  - Einführung in Perl
+KW  - Perl
+PY  - 1999
+ET  - 2. Aufl., 2., korrigierter Nachdr.
+ID  - b3kat_BV023777009
+SP  - XXIX, 287 S.
+PB  - Cambridge [u.a.] : O'Reilly
+SN  - 389721105X
+ER  - 
+
+TY  - BOOK
+AU  - Schwartz, Randal L. 1961-
+A3  - Christiansen, Tom
+TI  - Einführung in Perl
+KW  - Perl
+PY  - 1999
+ET  - 2. Aufl., 3., korrigierter Nachdr.
+ID  - b3kat_BV023779304
+SP  - XXIX, 287 S.
+SP  - graph. Darst.
+PB  - Cambridge [u.a.] : O'Reilly
+SN  - 389721105X
+ER  - 
+
+TY  - BOOK
+AU  - Tisdall, James D.
+TI  - Beginning Perl for bioinformatics : [an introduction to Perl for biologists]
+KW  - Bioinformatik
+KW  - Programmierung
+KW  - Perl
+PY  - 2001
+ET  - 1. ed.
+ID  - b3kat_BV013943694
+SP  - XIII, 368 S.
+PB  - Beijing [u.a.] : O'Reilly
+SN  - 0596000804
+ER  - 
+
+TY  - BOOK
+AU  - Wallace, Shawn P.
+TI  - Perl graphics programming : [images, graphs, animations, and PDFs from Perl]
+KW  - Graphische Programmierung
+KW  - Perl
+PY  - 2003
+ET  - 1. ed.
+ID  - b3kat_BV023746238
+SP  - XIII, 462 S.
+SP  - Ill., graph. Darst.
+PB  - Beijing [u.a.] : O'Reilly
+SN  - 059600219X
+ER  - 
+
+TY  - BOOK
+AU  - Christiansen, Tom
+A3  - Torkington, Nathan
+TI  - Perl cookbook : [solutions and examples for perl programmers]
+KW  - Perl
+PY  - 1998
+ET  - 1. ed.
+ID  - b3kat_BV012191050
+SP  - XXXIV, 757 S.
+PB  - Cambridge [u.a.] : O'Reilly
+SN  - 1565922433
+ER  - 
+
+TY  - BOOK
+AU  - Wall, Larry 1954-
+A3  - Christiansen, Tom
+A3  - Schwartz, Randal L. 1961-
+TI  - Programmieren mit Perl
+KW  - Perl
+PY  - 1998
+ET  - 1. Aufl., 2. korr. Nachdr.
+ID  - b3kat_BV012436846
+SP  - XXVI, 668 S.
+PB  - Cambridge [u.a.] : O'Reilly
+SN  - 3930673487
+ER  - 
+
+TY  - BOOK
+AU  - Conway, Damian
+TI  - Objektorientiert Programmieren mit Perl : Konzepte und Techniken ; [effiziente und elegante Programme mit Perl entwickeln ; zahlreiche Beispiele und Tipps für die tägliche Praxis]
+KW  - Perl
+KW  - Objektorientierte Programmierung
+PY  - 2001
+ID  - b3kat_BV013673638
+SP  - 632 S.
+SP  - Ill.
+PB  - München [u.a.] : Addison-Wesley
+T3  - Programmer's choice
+SN  - 3827318122
+ER  - 
+
+TY  - BOOK
+AU  - Müller, Udo
+TI  - Perl ge-packt : [schnelles Nachschlagen der wichtigsten Funktionen und vordefinierten Variablen ; Perl versus C, C++, Java ; Rezepte und Lösungen für häufige Aufgaben]
+KW  - Perl
+KW  - Befehlsvorrat
+KW  - Verzeichnis
+PY  - 2001
+ET  - 1. Aufl.
+ID  - b3kat_BV013780090
+SP  - 559 S.
+SP  - 15 cm
+PB  - Bonn : MITP-Verl.
+T3  - Die ge-packte Referenz
+SN  - 3826607287
+ER  - 
+
+TY  - BOOK
+AU  - Hall, Joseph N.
+A3  - Schwartz, Randal L. 1961-
+TI  - Effektiv Perl programmieren
+KW  - Perl
+PY  - 1998
+ET  - 1. Aufl.
+ID  - b3kat_BV011961937
+LA  - ger
+SP  - XVIII, 316 S.
+PB  - Bonn [u.a.] : Addison-Wesley
+T3  - Professionelle Programmierung
+SN  - 3827314062
+ER  - 
+
+TY  - BOOK
+AU  - Blank-Edelman, David N.
+A3  - Karrer, Andreas
+TI  - Perl für System-Administration
+KW  - Systemverwaltung
+KW  - Perl
+PY  - 2001
+ET  - 1. Aufl., dt. Ausg
+ID  - gbv_32267560X
+LA  - ger
+SP  - XIV, 461 S
+SP  - Ill., graph. Darst
+SP  - 24 cm
+PB  - Beijing [u.a.] : O'Reilly
+SN  - 3897211459 (kart.)
+ER  - 
+
+TY  - BOOK
+AU  - Wall, Larry 1954-
+A3  - Christiansen, Tom
+A3  - Schwartz, Randal L. 1961-
+TI  - Programmieren mit Perl
+KW  - Perl
+PY  - 1997
+ET  - 1. korr. Nachdr.
+ID  - b3kat_BV011711393
+SP  - XXVI, 668 S.
+PB  - Cambridge [u.a.] : O'Reilly
+SN  - 3930673487
+ER  - 
+
+TY  - BOOK
+AU  - Siever, Ellen
+A3  - Patwardhan, Nathan
+A3  - Spainhour, Stephen
+TI  - Perl in a nutshell
+KW  - Perl
+KW  - Befehlsvorrat
+KW  - Verzeichnis
+PY  - 2000
+ET  - Dt. Ausg., 1. Aufl.
+ID  - b3kat_BV012980811
+LA  - ger
+SP  - XVII, 707 S.
+PB  - Beijing [u.a.] : O'Reilly
+SN  - 3897211157
+ER  - 
+
+TY  - BOOK
+AU  - Wong, Clinton
+TI  - Web-Client-Programmierung mit Perl
+KW  - World Wide Web
+KW  - Client-Server-Konzept
+KW  - Perl
+KW  - Transportprotokoll
+KW  - Hypertext
+PY  - 1997
+ET  - Dt. Ausg., 1. Aufl.
+ID  - b3kat_BV011386274
+LA  - ger
+SP  - XIV, 222 S.
+PB  - Cambridge [u.a.] : O'Reilly
+SN  - 3930673614
+ER  - 
+
+TY  - BOOK
+AU  - Srinivasan, Sriram
+TI  - Advanced Perl programming
+KW  - Perl
+PY  - 1997
+ET  - 1. ed.
+ID  - b3kat_BV011594737
+SP  - XXIII, 404 S.
+SP  - graph. Darst.
+PB  - Cambridge [u.a.] : O'Reilly
+T3  - The Perl series
+SN  - 1565922204
+ER  - 
+
+TY  - BOOK
+AU  - Lee, James
+A3  - Cozens, Simon
+TI  - Beginning Perl : [Perl for those who missed it the first time around: learn about the duct tape for the web, the cloud and system administration ; covers Perl 5.10]
+KW  - Perl
+KW  - Einführung
+PY  - 2010
+ET  - 3. ed.
+ID  - b3kat_BV036779735
+SP  - XXIX, 428 S.
+SP  - graph. Darst.
+SP  - 24 cm
+PB  - [Berkeley, Calif.] : Apress
+T3  - Books for professionals by professionals
+N1  - Includes index
+SN  - 9781430227939
+SN  - 9781430227946
+ER  - 
+
+TY  - BOOK
 AU  - Schwartz, Randal L. 1961-
 A3  - Foy, Brian D.
 A3  - Phoenix, Tom
@@ -16,6 +422,127 @@ SN  - 9783868991451
 ER  - 
 
 TY  - BOOK
+A3  - Orwant, Jon
+TI  - Web, graphics, and Perl, Tk
+KW  - World Wide Web
+KW  - Perl
+KW  - Dynamische Web-Seite
+KW  - CGI
+KW  - Perl
+KW  - Graphische Programmierung
+KW  - Perl
+KW  - Tk
+KW  - Widget
+PY  - 2003
+ET  - 1. ed.
+ID  - b3kat_BV026734935
+SP  - XIII, 432 S.
+SP  - Ill., graph. Darst.
+PB  - Beijing [u.a.] : O'Reilly
+T3  - Best of the Perl journal 2
+SN  - 0596003110
+ER  - 
+
+TY  - BOOK
+A3  - Orwant, Jon
+TI  - Computer science and Perl programming : best of the Perl journal
+KW  - Informatik
+KW  - Aufsatzsammlung
+KW  - Perl
+KW  - Aufsatzsammlung
+KW  - Programmierung
+KW  - Aufsatzsammlung
+PY  - 2002
+ET  - 1. ed.
+ID  - b3kat_BV026414460
+SP  - XVII, 737 S.
+PB  - Beijing ; Cambridge ; Farnham ; Köln ; Paris ; Sebastopol ; Taipei ; Tokyo : O'Reilly
+SN  - 0596003102
+ER  - 
+
+TY  - BOOK
+A3  - Orwant, Jon
+TI  - Games, diversions, and Perl culture
+KW  - Perl
+KW  - Aufsatzsammlung
+PY  - 2003
+ET  - 1. ed.
+ID  - b3kat_BV026437022
+SP  - XIII, 569 S.
+SP  - graph. Darst.
+PB  - Beijing [u.a.] : O'Reilly
+T3  - Best of the Perl journal [3]
+SN  - 0596003129
+ER  - 
+
+TY  - BOOK
+AU  - Descartes, Alligator
+A3  - Bunce, Tim
+TI  - Programming the Perl DBI
+KW  - Datenbanksystem
+KW  - Programmierung
+KW  - Perl
+PY  - 2004
+ID  - b3kat_BV025525503
+SP  - XVI, 346 S.
+PB  - Beijing [u.a.] : O'Reilly
+T3  - Database programming with Perl
+SN  - 1565926994
+ER  - 
+
+TY  - BOOK
+AU  - Guelich, Scott
+A3  - Birznieks, Gunther
+A3  - Gundavaram, Shishir
+TI  - CGI-Programmieren mit Perl
+KW  - CGI
+KW  - Perl
+KW  - World Wide Web
+KW  - CGI
+PY  - 2001
+ET  - 2. Aufl.
+ID  - b3kat_BV025258003
+SP  - XIV, 484 S.
+SP  - Ill.
+PB  - Beijing [u.a.] : O'Reilly
+SN  - 389721167X
+ER  - 
+
+TY  - BOOK
+AU  - Schwartz, Randal L.
+A3  - Christiansen, Tom
+A3  - Olson, Erik
+TI  - Einführung in Perl für Win32-Systeme
+KW  - Perl
+PY  - 1998
+ET  - 1. korrig. Nachdr. der 2. Aufl., Dt. Ausg.
+ID  - b3kat_BV025245882
+SP  - XXII, 302 S.
+PB  - Cambridge [u.a.] : O'Reilly
+SN  - 3897211068
+ER  - 
+
+TY  - GEN
+TI  - The Perl CD bookshelf : 6 bestselling books on CD-ROM ; includes a bonus book: Perl in a nutshell
+KW  - Perl
+KW  - CD-ROM
+KW  - Perl
+KW  - Befehlsvorrat
+KW  - Verzeichnis
+KW  - Perl 5.8
+KW  - Befehlsvorrat
+KW  - Verzeichnis
+PY  - 1999
+ID  - b3kat_BV025114417
+SP  - 1 CD-ROM. - 1 CD-ROM
+SP  - Electronic book
+SP  - Buch
+SP  - 12 cm
+PB  - Beijing [u.a.] : OR̀eilly
+N1  - Browser Software (such as Netscape Communicator, Internet Explorer, or Lynx) supporting HTML 4.0 or earlier versions; Java run-time interpreters (for searching) for most versions of Linux, Unix, Macintosh, Windows 95/98/NT are included on the CD-ROM; CD-ROM drive
+ER  - 
+
+TY  - BOOK
 AU  - Schaaf, Dennis
 TI  - Perl
 KW  - Perl
@@ -28,6 +555,54 @@ SP  - 1 CD-ROM
 PB  - Bonn : Verl. moderne industrie Buch
 T3  - Das bhv-Taschenbuch 8035
 SN  - 3826680359
+ER  - 
+
+TY  - BOOK
+AU  - Foy, Brian D.
+TI  - Mastering Perl : [creating professional programs with Perl]
+KW  - Perl
+PY  - 2014
+ET  - 2. ed.
+ID  - b3kat_BV041657221
+SP  - XX, 376 S.
+SP  - Ill., graph. Darst.
+PB  - Beijing [u.a.] : O'Reilly
+SN  - 9781449393113
+ER  - 
+
+TY  - BOOK
+AU  - Orwant, Jon
+A3  - Hietaniemi, Jarkko
+A3  - Macdonald, John 1951-
+TI  - Algorithmen mit Perl
+KW  - Perl
+KW  - Algorithmus
+PY  - 2000
+ET  - 1. Aufl., [dt. Ausg.]
+ID  - b3kat_BV013086977
+LA  - ger
+SP  - XV, 700 S.
+SP  - Ill. - Ill., graph. Darst.
+SP  - 23 cm
+PB  - Beijing ; Cambridge ; Farnham ; Köln ; Paris ; Sebastopol ; Taipei ; Toyko : O'Reilly
+N1  - Literaturverz. S. 661 - 663
+SN  - 3897211416
+ER  - 
+
+TY  - BOOK
+AU  - Schwartz, Randal L. 1961-
+A3  - Foy, Brian D.
+A3  - Phoenix, Tom
+TI  - Intermediate Perl : [covers perl 5.14; beyond the basics of learningn perl]
+KW  - Perl
+PY  - 2012
+ET  - 2nd ed.
+ID  - b3kat_BV040458713
+SP  - XIX, 371S.
+SP  - graph. Darst.
+PB  - Beijing [u.a.] : O'Reilly
+SN  - 1449393098
+SN  - 9781449393090
 ER  - 
 
 TY  - BOOK
@@ -51,6 +626,271 @@ SN  - 3897211491
 ER  - 
 
 TY  - BOOK
+AU  - Christiansen, Tom
+A3  - Torkington, Nathan
+TI  - Perl-Kochbuch
+KW  - Perl
+PY  - 2004
+ET  - 2. Aufl.
+ID  - b3kat_BV017902921
+LA  - ger
+SP  - 990 S.
+PB  - Beijing [u.a.] : O'Reilly
+SN  - 3897213664
+ER  - 
+
+TY  - BOOK
+AU  - Tisdall, James D.
+TI  - Einführung in Perl für Bioinformatik
+KW  - Bioinformatik
+KW  - Programmierung
+KW  - Perl
+PY  - 2002
+ET  - Dt. Ausg., 1. Aufl.
+ID  - b3kat_BV014221578
+LA  - ger
+SP  - XVIII, 418 S.
+SP  - Ill.
+PB  - Beijing [u.a.] : O'Reilly
+SN  - 3897212935
+ER  - 
+
+TY  - BOOK
+AU  - Lehmann, Marc
+TI  - Programmieren von Grafiken mit Perl : [GD, ImageMagick und Gimp mit Perl]
+KW  - Computergraphik
+KW  - Perl
+KW  - Zweidimensionale Computergraphik
+KW  - Graphische Programmierung
+KW  - Perl 5
+KW  - Bildverarbeitung
+KW  - Graphische Programmierung
+KW  - Perl 5
+PY  - 2003
+ET  - Dt. Orig.-Ausg., 1. Aufl.
+ID  - b3kat_BV012581814
+SP  - XII, 415 S.
+SP  - Ill.
+PB  - Beijing [u.a.] : OR̀eilly
+SN  - 3897211092
+ER  - 
+
+TY  - BOOK
+AU  - Srinivasan, Sriram
+TI  - Fortgeschrittene Perl-Programmierung
+KW  - Perl
+PY  - 1999
+ET  - 1. Aufl., 1., korrigierter Nachdr.
+ID  - b3kat_BV012954468
+SP  - XXIII, 440 S.
+SP  - Ill., graph. Darst.
+PB  - Beijing [u.a.] : O'Reilly
+SN  - 3897211076
+ER  - 
+
+TY  - BOOK
+AU  - Conway, Damian
+TI  - Perl best practices : [Standards für guten Perl-Code]
+KW  - Perl
+PY  - 2006
+ET  - Dt. Ausg., 1. Aufl.
+ID  - b3kat_BV021528937
+SP  - XXII, 555 S.
+SP  - graph. Darst.
+PB  - Bejing u.a. : O'Reilly
+SN  - 3897214547
+SN  - 9783897214545
+ER  - 
+
+TY  - BOOK
+AU  - Chromatic
+A3  - Conway, Damian
+A3  - Poe, Curtis
+TI  - Perl Hacks : [Tipps & Tools zum Programmieren, Debuggen und Überleben]
+KW  - Perl
+PY  - 2006
+ET  - 1. Aufl.
+ID  - b3kat_BV021998330
+SP  - XX, 305 S.
+PB  - Beijing [u.a.] : O'Reilly
+T3  - Hacks series
+N1  - Aus dem Engl. übers.
+SN  - 3897214741
+SN  - 9783897214743
+ER  - 
+
+TY  - BOOK
+AU  - Vromans, Johan
+TI  - Perl 5 - kurz & gut
+KW  - Perl
+KW  - Perl 5
+KW  - Befehlsvorrat
+KW  - Verzeichnis
+PY  - 1999
+ET  - 2. Aufl.
+ID  - b3kat_BV012109613
+LA  - ger
+SP  - 70 S.
+PB  - Cambridge [u.a.] : O'Reilly
+T3  - O'Reillys Taschenbibliothek
+SN  - 3897212013
+ER  - 
+
+TY  - BOOK
+AU  - Schwartz, Randal L. 1961-
+A3  - Foy, Brian D.
+A3  - Phoenix, Tom
+TI  - Learning Perl : [covers Perl 5.14]
+KW  - Perl
+KW  - Lehrbuch
+PY  - 2011
+ET  - 6. ed.
+ID  - b3kat_BV037393174
+SP  - XXI, 363 S.
+SP  - graph. Darst.
+PB  - Beijing [u.a.] : O'Reilly
+SN  - 9781449303587
+ER  - 
+
+TY  - BOOK
+AU  - Lidie, Stephen
+TI  - Perl, Tk : kurz & gut
+KW  - Perl
+KW  - Perl 5
+KW  - Tk 8.0
+KW  - Widget
+KW  - Befehlsvorrat
+KW  - Verzeichnis
+PY  - 1998
+ET  - 1. Aufl.
+ID  - b3kat_BV012109612
+LA  - ger
+SP  - 96 S.
+PB  - Cambridge ; Köln ; Paris ; Sebastopol ; Tokyo : O'Reilly
+T3  - O'Reillys Taschenbibliothek
+SN  - 3897212005
+ER  - 
+
+TY  - BOOK
+AU  - Quigley, Ellie
+TI  - Beispielhaft in Perl programmieren
+KW  - Perl
+KW  - Einführung
+KW  - Perl
+PY  - 1996
+ID  - b3kat_BV010552717
+SP  - 350 S.
+SP  - 1 Diskette, 3,5"
+PB  - München [u.a.] : Prentice Hall
+SN  - 382729505X
+ER  - 
+
+TY  - BOOK
+AU  - Schwartz, Randal L.
+A3  - Christiansen, Tom
+TI  - Einführung in Perl
+KW  - Perl
+PY  - 2000
+ET  - 2. Aufl., 4., korr. Nachdr
+ID  - gbv_318753995
+LA  - ger
+SP  - XXIX, 287 S
+SP  - graph. Darst
+PB  - Beijing [u.a.] : O'Reilly
+SN  - 389721105X
+ER  - 
+
+TY  - BOOK
+AU  - Schwartz, Randal L. 1961-
+TI  - Einführung in Perl
+KW  - Perl
+PY  - 1995
+ET  - 1. Aufl.
+ID  - b3kat_BV010120101
+SP  - XXX, 258 S.
+PB  - Bonn : O'Reilly, Thomson
+T3  - A Nutshell handbook
+SN  - 3930673088
+ER  - 
+
+TY  - BOOK
+AU  - Wall, Larry 1954-
+A3  - Christiansen, Tom 1963-
+A3  - Orwant, Jon
+TI  - Programmieren mit Perl
+KW  - Perl
+PY  - 2003
+ET  - 2. Aufl., korr. Nachdr.
+ID  - b3kat_BV017129122
+LA  - ger
+SP  - XXXII, 1095 S.
+SP  - Ill.
+PB  - Beijing [u.a.] : O'Reilly
+N1  - Dt. Ausg. der 3. Aufl. des engl. Originals
+SN  - 3897211440
+ER  - 
+
+TY  - BOOK
+AU  - Schwartz, Randal L. 1961-
+TI  - Einführung in Perl
+KW  - Perl
+PY  - 1996
+ET  - 1., überarb. und korrigierter Nachdr.
+ID  - b3kat_BV023767100
+SP  - XXX, 272 S.
+PB  - Bonn : O'Reilly
+T3  - A nutshell handbook
+SN  - 3930673088
+ER  - 
+
+TY  - BOOK
+AU  - McMillan, Michael
+TI  - Perl from the ground up : [covers Perl for UNIX, Windows 95 & Windows NT environments]
+KW  - Perl
+PY  - 1998
+ID  - b3kat_BV023769125
+SP  - XXIII, 520 S.
+PB  - Berkeley, Calif. [u.a.] : Osborne
+SN  - 0078824044
+ER  - 
+
+TY  - BOOK
+AU  - Hall, Joseph N.
+A3  - Schwartz, Randal L. 1961-
+TI  - Effective Perl programming : writing better programs with Perl
+KW  - Perl
+PY  - 1998
+ET  - 2. printing
+ID  - b3kat_BV023787876
+SP  - XIV, 273 S.
+PB  - Reading, Mass. [u.a.] : Addison-Wesley
+SN  - 0201419750
+ER  - 
+
+TY  - BOOK
+A3  - Boutell, Thomas
+TI  - CGI programming in C & Perl : [featuring C and Perl 5 source code]
+KW  - Perl
+KW  - CGI
+KW  - World Wide Web
+ID  - b3kat_BV023814904
+PB  - Reading, Mass. [u.a.] : Addison-Wesley
+ER  - 
+
+TY  - BOOK
+AU  - Quigley, Ellen
+TI  - Beispielhaft in Perl programmieren
+KW  - Perl
+PY  - 1995
+ID  - b3kat_BV023689071
+SP  - 350 S.
+SP  - 1 Diskette (3,5)̋
+SP  - 23 cm
+PB  - München ; London ; Mexiko City ; New York ; Singapur ; Sydney ; Toronto : Prentice Hall
+SN  - 382729505X
+ER  - 
+
+TY  - BOOK
 AU  - Schwartz, Randal L. 1961-
 A3  - Foy, Brian D.
 A3  - Phoenix, Tom
@@ -65,6 +905,103 @@ SP  - 364 S.
 SP  - graph. Darst.
 PB  - Beijing [u.a.] : O'Reilly
 SN  - 9783897218871
+ER  - 
+
+TY  - BOOK
+A3  - Orwant, Jon
+TI  - Games, diversions, and Perl culture
+KW  - Perl
+KW  - Aufsatzsammlung
+PY  - 2003
+ET  - 1. ed.
+ID  - b3kat_BV023792668
+SP  - XIII, 569 S.
+SP  - Ill., graph. Darst.
+SP  - 24 cm
+PB  - Beijing [u.a.] : O'Reilly
+T3  - Best of the Perl journal
+SN  - 0596003129
+ER  - 
+
+TY  - DATA
+A3  - Irving, Clay
+A3  - Patwardhan, Nathan
+TI  - Programmieren mit Perl-Modulen
+KW  - Perl
+KW  - Modul
+ID  - b3kat_BV023548724
+PB  - Köln : O'Reilly
+N1  - Teilausg.
+ER  - 
+
+TY  - BOOK
+AU  - Vromans, Johan
+TI  - Perl 5 : kurz & gut
+KW  - Perl
+KW  - Perl 5
+KW  - Befehlsvorrat
+KW  - Verzeichnis
+PY  - 1999
+ET  - 2. Aufl.
+ID  - b3kat_BV025114420
+SP  - 70 S.
+PB  - Köln [u.a.] : OR̀eilly
+T3  - OR̀eillys Taschenbibliothek
+SN  - 3897212013
+ER  - 
+
+TY  - BOOK
+AU  - Wall, Larry
+A3  - Christiansen, Tom
+A3  - Orwant, Jon
+TI  - Programmieren mit Perl
+KW  - Perl
+KW  - Perl 5.6
+PY  - 2001
+ET  - 2. Aufl
+ID  - gbv_083500081
+LA  - ger
+SP  - XXXII, 1094 S
+SP  - Ill.
+SP  - Ill
+SP  - 23 cm
+PB  - Beijing [u.a.] : O'Reilly
+SN  - 3897211440
+ER  - 
+
+TY  - BOOK
+AU  - Orwant, Jon
+A3  - Hietaniemi, Jarkko
+A3  - Macdonald, John
+TI  - Algorithmen mit Perl
+KW  - Datenstruktur
+KW  - Algorithmus
+KW  - Programmierung
+KW  - Perl
+PY  - 2000
+ET  - 1. Aufl., dt. Ausg
+ID  - gbv_311074308
+LA  - ger
+SP  - XV, 700 S
+SP  - Ill., graph. Darst
+PB  - Beijing [u.a.] : O'Reilly
+N1  - Aus d. Amerik. übers
+N1  - Literaturverz. S. 661 - 663
+SN  - 3897211416
+ER  - 
+
+TY  - BOOK
+AU  - Müller, Udo
+TI  - Der Perl-Kurs : [die wichtigsten Module im Überblick, zahlreiche nützliche Programmbeispiele, CD mit Perl-Lernkurs, Werkzeugen & Bibliotheken]
+KW  - Perl
+PY  - 2000
+ET  - 1. Aufl.
+ID  - b3kat_BV012924314
+SP  - 856 S.
+SP  - Ill.
+SP  - 1 CD-ROM (12 cm)
+PB  - Bonn : MITP-Verl.
+SN  - 3826605233
 ER  - 
 
 TY  - BOOK
@@ -88,6 +1025,165 @@ SN  - 389721167X
 ER  - 
 
 TY  - BOOK
+AU  - Patwardhan, Nathan
+A3  - Irving, Clay
+TI  - Programmieren mit Perl-Modulen
+KW  - Perl
+PY  - 1999
+ET  - 1. Aufl.
+ID  - b3kat_BV012327866
+SP  - XVI, 522 S.
+SP  - graph. Darst.
+SP  - CD-ROM (12 cm)
+PB  - Beijing [u.a.] : O'Reilly
+SN  - 3897211084
+ER  - 
+
+TY  - BOOK
+AU  - Hall, Joseph N.
+A3  - Schwartz, Randal L. 1961-
+TI  - Effective Perl programming : writing better programs with Perl
+KW  - Perl
+PY  - 1998
+ET  - 1. print.
+ID  - b3kat_BV011931750
+SP  - XIV, 273 S.
+PB  - Reading, Mass. [u.a.] : Addison-Wesley
+SN  - 0201419750
+ER  - 
+
+TY  - BOOK
+AU  - Schwartz, Randal L. 1961-
+A3  - Christiansen, Tom
+TI  - Einführung in Perl
+KW  - Perl
+PY  - 2000
+ET  - 2. Aufl., 4. korr. Nachdr.
+ID  - b3kat_BV013341098
+SP  - XXIX, 287 S.
+PB  - Beijing [u.a.] : O'Reilly
+SN  - 389721105X
+ER  - 
+
+TY  - BOOK
+AU  - Jellinek, Brigitte
+A3  - Haemmerle-Uhl, Jutta
+TI  - Perl : [leicht, klar, sofort]
+KW  - Perl
+PY  - 2001
+ID  - b3kat_BV013927306
+SP  - 334 S.
+SP  - Ill. : 24 cm
+PB  - München : Markt-und-Technik-Verl.
+T3  - M & T easy
+SN  - 3827261538
+ER  - 
+
+TY  - BOOK
+AU  - Meltzer, Kevin
+A3  - Michalski, Brent
+TI  - CGI-Anwendungen mit Perl
+KW  - CGI
+KW  - Perl
+KW  - Dynamische Web-Seite
+KW  - CGI
+KW  - Perl
+PY  - 2001
+ID  - b3kat_BV013973448
+LA  - ger
+SP  - 500 S.
+SP  - Ill.
+PB  - München [u.a.] : Addison-Wesley
+T3  - net.com
+SN  - 3827318963
+ER  - 
+
+TY  - BOOK
+AU  - Jepson, Brian
+TI  - Perl utilities guide
+KW  - Perl
+KW  - Perl
+KW  - Dienstprogramm
+PY  - 1998
+ET  - 1. ed.
+ID  - b3kat_BV012833423
+SP  - XI, 279 S.
+SP  - Ill.
+PB  - Cambridge [u.a.] : O'Reilly
+T3  - Perl resource kit [1]
+ER  - 
+
+TY  - BOOK
+AU  - Olson, Erik
+TI  - Programming with perl modules
+KW  - Perl
+PY  - 1998
+ET  - 1. ed.
+ID  - b3kat_BV012833427
+SP  - XIII, 355 S.
+SP  - Ill.
+PB  - Cambridge [u.a.] : O'Reilly
+T3  - Perl resource kit [2]
+ER  - 
+
+TY  - BOOK
+AU  - Roßner, Thorsten
+TI  - Das Einsteigerseminar Perl : [der methodische und ausführliche Einstieg ; über 390 Seiten Einsteiger-Know-how ; mit großem CGI-Teil]
+KW  - Perl
+PY  - 1998
+ET  - 3. Aufl.
+ID  - b3kat_BV012911066
+SP  - 404 S.
+SP  - Ill., graph. Darst.
+PB  - Kaarst : bhv
+T3  - Das Einsteigerseminar
+SN  - 3828710328
+ER  - 
+
+TY  - BOOK
+AU  - Foster-Johnson, Eric
+TI  - Perl-Module : effektiver programmieren mit dem CPAN-Archiv
+KW  - Perl
+PY  - 1999
+ET  - 1. Aufl.
+ID  - b3kat_BV012812977
+LA  - ger
+SP  - 400 S.
+SP  - Ill.
+SP  - CD-ROM (12 cm)
+PB  - Bonn : MITP
+N1  - Systemvoraussetzungen: Windows 95/NT; CD-ROM-Laufwerk
+SN  - 3826605705
+ER  - 
+
+TY  - BOOK
+AU  - Christiansen, Tom
+A3  - Torkington, Nathan
+TI  - Perl cookbook : [solutions and examples for Perl programmers]
+KW  - Perl
+PY  - 1999
+ET  - Minor corr.
+ID  - b3kat_BV012856119
+SP  - XXXIV, 757 S.
+PB  - Beijing [u.a.] : O'Reilly
+SN  - 1565922433
+ER  - 
+
+TY  - BOOK
+AU  - Frank, Simon A.
+TI  - Webprogrammierung mit Perl : Übungsbuch mit einer Kurzeinführung in die CGI-Programmierung mit Perl
+KW  - Perl
+PY  - 2008
+ET  - 1. Aufl.
+ID  - b3kat_BV023244130
+SP  - 96 S.
+SP  - 210 mm x 148 mm, 150 gr.
+PB  - Norderstedt : Books on Demand
+SN  - 3837013790
+SN  - 9783837013795
+ER  - 
+
+TY  - BOOK
 AU  - Oualline, Steve
 TI  - Echt coole Perl-Skripte : nützliche Perl-Skripte, die knifflige Probleme lösen
 KW  - Skript
@@ -101,6 +1197,199 @@ SN  - 9783446406834
 ER  - 
 
 TY  - BOOK
+AU  - Wall, Larry 1954-
+A3  - Christiansen, Tom
+A3  - Schwartz, Randal L. 1961-
+TI  - Programmieren mit Perl
+KW  - UNIX
+KW  - Dateiaufbereitung
+KW  - Desktop-Publishing
+KW  - Public-domain-Software
+KW  - Perl
+PY  - 1997
+ET  - Dt. Ausg. der 2. Aufl., 1. Aufl.
+ID  - b3kat_BV021935143
+SP  - XXVI, 668 S.
+PB  - Cambridge [u.a.] : O'Reilly
+SN  - 3930673487
+ER  - 
+
+TY  - BOOK
+AU  - Vromans, Johan
+TI  - Perl 5 : kurz & gut ; [behandelt Perl 5.8]
+KW  - Perl
+PY  - 2003
+ET  - Dt. Ausg., 4. Aufl.
+ID  - b3kat_BV021969190
+SP  - 108 S.
+PB  - Beijing [u.a.] : O'Reilly
+T3  - O'Reillys Taschenbibliothek
+SN  - 3897212471
+ER  - 
+
+TY  - BOOK
+AU  - Schwartz, Randal L. 1961-
+A3  - Phoenix, Tom
+TI  - Learning Perl objects, references and modules : [beyond the basics of learning perl]
+KW  - Modulare Programmierung
+KW  - Objektorientierte Programmierung
+KW  - Perl
+PY  - 2003
+ET  - 1. ed.
+ID  - b3kat_BV021969278
+SP  - XV, 205 S.
+PB  - Beijing [u.a.] : O'Reilly
+SN  - 0596004788
+ER  - 
+
+TY  - BOOK
+AU  - Cuber, Ulrich
+TI  - Administrative Lösungen mit Perl : gerade bei komplexen Aufgaben ist Perl auch unter Windows die erste Wahl ; [Praxishandbuch]
+KW  - Perl
+PY  - 2005
+ID  - b3kat_BV019761903
+SP  - 166 S.
+PB  - Kissing : Interest
+T3  - Windows-Scripting für Administratoren
+SN  - 382458316X
+ER  - 
+
+TY  - BOOK
+AU  - Wainwright, Peter
+TI  - Pro Perl : [a comprehensive guide for developers who want to master the Perl programming language]
+KW  - Perl
+PY  - 2005
+ID  - b3kat_BV019777931
+SP  - XXIII, 1037 S.
+SP  - Ill.
+PB  - Berkeley, CA : Apress
+T3  - The expert's voice in open source
+SN  - 159059438X
+ER  - 
+
+TY  - BOOK
+AU  - Duncan, Andy
+A3  - Still, Jared
+TI  - Perl for oracle DBAs : [perl scripts, applications & tips for database administrators]
+KW  - Perl
+KW  - ORACLE 8i
+KW  - Perl
+KW  - ORACLE 9i
+KW  - Perl
+KW  - ORACLE
+KW  - Perl
+PY  - 2002
+ET  - 1. ed.
+ID  - b3kat_BV020860169
+SP  - XVI, 602 S.
+SP  - graph. Darst. : 24 cm
+PB  - Beijing ; Cambridge ; Farnham ; Köln ; Paris ; Sebastopol ; Taip : O'Reilly
+N1  - Includes index
+SN  - 0596002106
+ER  - 
+
+TY  - BOOK
+AU  - Schwartz, Randal L. 1961-
+TI  - Einführung in Perl
+KW  - Perl
+PY  - 1996
+ET  - 1. Aufl., 1. überarb. und korr. Nachdr.
+ID  - b3kat_BV011194272
+SP  - XXX, 272 S.
+PB  - Köln : O'Reilly
+SN  - 3930673088
+ER  - 
+
+TY  - BOOK
+AU  - Schwartz, Randal L. 1961-
+A3  - Christiansen, Tom
+A3  - Olson, Erik
+TI  - Einführung in Perl für Win32-Systeme
+KW  - Perl
+PY  - 1998
+ET  - 1. Aufl.
+ID  - b3kat_BV011626544
+LA  - ger
+SP  - XXII, 302 S.
+PB  - Cambridge [u.a.] : O'Reilly
+SN  - 3897211068
+ER  - 
+
+TY  - BOOK
+AU  - Deep, John
+A3  - Holfelder, Peter
+TI  - CGI mit Perl
+KW  - CGI
+KW  - Perl
+PY  - 1997
+ET  - 1. Aufl.
+ID  - b3kat_BV011831257
+SP  - XVI, 335 S.
+SP  - Ill., graph. Darst.
+SP  - 1 CD-ROM ; 12 cm
+PB  - Düsseldorf [u.a.] : Sybex
+T3  - internet, profi, praxis
+SN  - 3815520177
+ER  - 
+
+TY  - BOOK
+AU  - Schwartz, Randal L. 1961-
+A3  - Christiansen, Tom
+TI  - Einführung in Perl
+KW  - Perl
+PY  - 1998
+ET  - 2. Aufl.
+ID  - b3kat_BV011563306
+LA  - ger
+SP  - XXIX, 287 S.
+PB  - Cambridge [u.a.] : O'Reilly
+SN  - 389721105X
+ER  - 
+
+TY  - BOOK
+AU  - Srinivasan, Sriram
+TI  - Fortgeschrittene Perl-Programmierung
+KW  - Perl
+PY  - 1998
+ET  - 1. Aufl.
+ID  - b3kat_BV011711659
+SP  - XXIII, 436 S.
+SP  - Ill., graph. Darst.
+PB  - Cambridge [u.a.] : O'Reilly
+SN  - 3897211076
+ER  - 
+
+TY  - BOOK
+AU  - Deep, John
+A3  - Holfelder, Peter
+TI  - Developing CGI applications with Perl
+KW  - CGI
+KW  - Perl
+PY  - 1996
+ID  - b3kat_BV010833673
+SP  - XIV, 299 S.
+SP  - Ill.
+PB  - New York [u.a.] : Wiley
+T3  - Wiley computing publishing
+SN  - 0471141585
+ER  - 
+
+TY  - BOOK
+AU  - Blank-Edelman, David N.
+TI  - Perl für System-Administration
+KW  - Perl
+KW  - Systemverwaltung
+PY  - 2001
+ET  - Dt. Ausg., 1. Aufl.
+ID  - b3kat_BV013653077
+LA  - ger
+SP  - XIV, 461 S.
+SP  - Ill.
+PB  - Beijing ; Köln [u.a.] : O'Reilly
+SN  - 3897211459
+ER  - 
+
+TY  - BOOK
 AU  - DuBois, Paul 1956-
 TI  - MySQL & Perl developer's guide : Webanwendungen programmieren mit Perl DBI, mod_perl und CGI
 KW  - MySQL
@@ -111,6 +1400,24 @@ SP  - 613 S.
 PB  - München : Markt-und-Technik-Verl.
 T3  - New technology
 SN  - 3827262976
+ER  - 
+
+TY  - BOOK
+AU  - Müller, Udo
+TI  - Workshop Perl : [mit CD-ROM und Online-Test!]
+KW  - Perl
+KW  - Perl
+KW  - Aufgabensammlung
+KW  - CD-ROM
+PY  - 2002
+ID  - b3kat_BV014267092
+SP  - 399 S.
+SP  - Ill., graph. Darst.
+SP  - 1 CD-ROM (12 cm)
+SP  - 24 cm
+PB  - München [u.a.] : Addison-Wesley
+T3  - Workshop
+SN  - 3827319005
 ER  - 
 
 TY  - BOOK
@@ -147,6 +1454,89 @@ SP  - XIX, 554 S.
 SP  - Ill.
 PB  - Beijing [u.a.] : O'Reilly
 SN  - 3897211580
+ER  - 
+
+TY  - BOOK
+AU  - Schwartz, Randal L.
+A3  - Phoenix, Tom
+A3  - Lang, Jørgen W.
+TI  - Einführung in Perl
+KW  - Perl
+KW  - Perl 5.6
+PY  - 2004
+ET  - [Dt. Ausg.] der 3. Aufl., 3. korr. Nachdr.
+ID  - gbv_47441292X
+LA  - ger
+SP  - XIV, 352 S
+SP  - 23 cm
+PB  - Beijing [u.a.] : O'Reilly
+SN  - 3897211475
+ER  - 
+
+TY  - BOOK
+AU  - Vromans, Johan
+TI  - Perl 5 - kurz & gut
+KW  - Perl 5
+KW  - Befehlsvorrat
+KW  - Verzeichnis
+KW  - Perl
+PY  - 2000
+ET  - 1. Aufl.
+ID  - b3kat_BV013303152
+LA  - ger
+SP  - 110 S.
+PB  - Bijing u.a. : O'Reilly
+T3  - O'Reillys Taschenbibliothek
+SN  - 3897212277
+ER  - 
+
+TY  - BOOK
+AU  - Schwartz, Randal L.
+A3  - Foy, Brian D.
+A3  - Phoenix, Tom
+TI  - Einführung in Perl : [behandelt Perl 5.8]
+KW  - Perl
+KW  - Perl 5.8
+PY  - 2005
+ET  - 4. Aufl., dt. Ausg. der 4. Aufl.
+ID  - b3kat_BV024608529
+SP  - XVII, 316 S.
+SP  - Ill.
+PB  - Beijing <<[u.a.]>> : O'Reilly
+SN  - 3897214342
+ER  - 
+
+TY  - BOOK
+AU  - Lemay, Laura
+TI  - Perl in 21 Tagen : Schritt für Schritt zum Programmierprofi ; viele nützliche Beispiele zu der mächtigen plattformübergreifenden Skriptsprache ; aktuell bis Perl 5.005
+KW  - Perl 5
+KW  - Perl
+PY  - 2000
+ID  - b3kat_BV012779854
+LA  - ger
+SP  - 795 S.
+SP  - Ill.
+SP  - CD-ROM (12 cm), 1 Bl.
+PB  - München : Markt-&-Technik-Verl.
+T3  - ... in 21 Tagen
+SN  - 3827220386
+ER  - 
+
+TY  - BOOK
+AU  - Wall, Larry 1954-
+A3  - Schwartz, Randal L. 1961-
+TI  - Programmieren in Perl : ein Nutshell-Handbuch
+KW  - Perl
+KW  - Einführung
+KW  - Perl
+PY  - 1993
+ID  - b3kat_BV005883626
+SP  - XVIII, 439 S.
+SP  - graph. Darst.
+SP  - 1 Beil.
+PB  - München [u.a.] : Hanser
+SN  - 0937175641
+SN  - 3446172572
 ER  - 
 
 TY  - BOOK
