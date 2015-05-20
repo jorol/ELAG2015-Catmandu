@@ -140,12 +140,26 @@
     <textarea id="source">
 class: center middle
 ![LibreCat](./img/librecat.png "Logo LibreCat")
-# Catmandu
+## Catmandu
 ### a (meta)data toolkit
-
 #### ELAG 2015, 9-11 June 2015, Stockholm, Sweden
-##### Johann Rolschewski / Vitali Peil
-###### Berlin State Library / Bielefeld University Library, Germany
+
+---
+class: center middle
+## About Us
+### Johann Rolschewski, Berlin State Library, Germany
+### Vitali Peil, Bielefeld University Library, Germany
+---
+class: middle
+## Agenda
+
+  * Introduction
+  * CLI
+  * Fix
+  * OAI
+  * Linked Data
+  * Extensions
+
 ---
 class: middle
 ## Libraries collect data ...
@@ -224,7 +238,7 @@ class: middle
 class: center middle
 ## Importer/Exporter
 
-AlephSEQ BibTeX MAB2 MARC PICA
+AlephSEQ BibTeX MAB2 MARC MODS PICA
 
 Atom CSV JSON RDF XLS XML YAML
 
@@ -291,16 +305,6 @@ $ catmandu info
 $ catmandu help <command>
 ```
 
-or
-
-```terminal
-$ catmandu exporter_info
-$ catmandu fix_info
-$ catmandu importer_info
-$ catmandu store_info
-$ catmandu help <command>
-```
-
 ---
 class: middle
 ## CLI - convert()
@@ -324,11 +328,11 @@ class: middle
 ## CLI - convert()
 
 ```terminal
-$ cat ./shared/journals_mab2.dat | catmandu convert MAB2 to JSON
+$ cat journals.mab2.dat | catmandu convert MAB2 to JSON
 
-$ catmandu convert MAB2 to JSON < ./shared/journals_mab2.dat
+$ catmandu convert MAB2 to JSON < journals.mab2.dat
 
-$ catmandu convert MAB2 --type XML to JSON < ./shared/journals_mab2.xml
+$ catmandu convert MAB2 --type XML to JSON < journals.mab2.xml
 ```
 
 ---
@@ -365,11 +369,11 @@ class: middle
 ## CLI - convert()
 
 ```terminal
-$ catmandu convert MARC to JSON < ./shared/camel.mrc
+$ catmandu convert MARC to JSON < perl_books.mrc
 
-$ catmandu convert MARC --type RAW to JSON < ./shared/camel.mrc
+$ catmandu convert MARC --type RAW to JSON < perl_books.mrc
 
-$ catmandu convert MARC --type XML to JSON < ./shared/camel.xml
+$ catmandu convert MARC --type XML to JSON < perl_books.mrc.xml
 ```
 
 ---
@@ -377,9 +381,9 @@ class: middle
 ## CLI - convert()
 
 ```terminal
-$ catmandu convert PICA to YAML < ./shared/pica.xml
+$ catmandu convert PICA to JSON < perl_books.pica.xml
 
-$ catmandu convert PICA to JSON < ./shared/pica.xml
+$ catmandu convert PICA --type Plus to YAML < perl_books.pica.dat
 ```
 
 ---
@@ -387,12 +391,10 @@ class: middle
 ## CLI - convert()
 
 ```terminal
-$ catmandu convert CSV to YAML < ./shared/eu_elections_2014.csv 
+$ catmandu convert CSV to YAML < berlin_eu_elections_2014.csv 
 
 $ catmandu convert CSV to CSV --fields Wahlbezirk,DKP,NPD 
-    < ./shared/eu_elections_2014.csv 
-
-$ catmandu convert YAML to JSON < ./shared/journals.yml
+    < berlin_eu_elections.csv 
 ```
 
 ---
@@ -400,13 +402,13 @@ class: middle
 ## CLI - convert()
 
 ```terminal
-$ catmandu convert MAB2 --fix ./shared/mab2rdf.fix to CSV 
+$ catmandu convert MAB2 --fix mab2rdf.fix to CSV 
     --file mab2.csv --fields dc_identifier,dc_title,dc_language 
-    < ./shared/journals_mab2.dat
+    < journals.mab2.dat
 
-$ catmandu convert MAB2 --fix ./shared/mab2rdf.fix to XLS 
+$ catmandu convert MAB2 --fix mab2rdf.fix to XLS 
     --file mab2.xls --fields dc_identifier,dc_title,dc_language 
-    < ./shared/journals_mab2.dat
+    < journals.mab2.dat
 ```
 
 ---
@@ -414,19 +416,11 @@ class: middle
 ## CLI - convert()
 
 ```terminal
-$ cat ./shared/test.tt
-[%- FOREACH f IN record %]
-[% _id %] [% f.shift %][% f.shift %][% f.shift %][% f.join(":") %]
-[%- END %]
-
-$ catmandu convert MARC to Template --template ./shared/test.tt 
-    < ./shared/camel.mrc
-
-$ cat ./shared/marc.tt
+$ cat marc.tt
 [% _id %] [% dc.creator.0 %]: [% dc.title %]
 
-$ catmandu convert MARC --fix ./shared/marc.fix to Template 
-    --template ./shared/marc.tt < ./shared/camel.mrc
+$ catmandu convert MARC --fix .marc.fix to Template 
+    --template marc.tt < perl_books.mrc
 ```
 
 ---
@@ -434,11 +428,11 @@ class: middle
 ## CLI - convert()
 
 ```cmd
-catmandu convert RDF --file ./shared/zdb_resources.rdf to YAML
-catmandu convert MAB2 --type RAW --fix ./shared/mab2rdf.fix to RDF 
-    --type ttl < ./shared/mab2.dat
-catmandu convert MAB2 --type RAW --fix ./shared/mab2rdf.fix to RDF 
-    --type xml < ./shared/mab2.dat
+catmandu convert RDF --file journals.rdf to YAML
+catmandu convert MAB2 --type RAW --fix mab2rdf.fix to RDF 
+    --type ttl < journals.mab2.dat
+catmandu convert MAB2 --type RAW --fix mab2rdf.fix to RDF 
+    --type xml < journals.mab2.dat
 ```
 
 See https://gbv.github.io/aREF/ and https://metacpan.org/pod/RDF::aREF
@@ -473,21 +467,21 @@ class: middle
 ## CLI - import()
 
 ```terminal
-$ catmandu import MARC --type RAW --fix ./shared/marc.fix to MongoDB 
-    --database_name marc --bag marc < ./shared/camel.mrc
+$ catmandu import MARC --type RAW --fix marc.fix to MongoDB 
+    --database_name marc --bag marc < perl_books.mrc
 
-$ catmandu import MAB2 --fix ./shared/mab2rdf.fix to MongoDB 
-    --database_name mab --bag mab  < ./shared/journals_mab2.dat
+$ catmandu import MAB2 --fix mab2rdf.fix to MongoDB 
+    --database_name mab --bag mab  < journals.mab2.dat
 
 $ mongo
 > use marc
 > db.marc.find()
 
-$ catmandu import MARC --type RAW --fix ./shared/marc.fix to ElasticSearch 
-    --index_name marc --bag marc < ./shared/camel.mrc
+$ catmandu import MARC --type RAW --fix marc.fix to ElasticSearch 
+    --index_name marc --bag marc < perl_books.mrc
 
-$ catmandu import MAB2 --fix ./shared/mab2rdf.fix to ElasticSearch 
-    --index_name mab --bag mab < ./shared/journals_mab2.dat
+$ catmandu import MAB2 --fix mab2rdf.fix to ElasticSearch 
+    --index_name mab --bag mab < journals.mab2.dat
 
 $ curl 'http://localhost:9200/mab/_search?q=*'
 ```
@@ -519,12 +513,16 @@ class: middle
 ```terminal
 $ catmandu export MongoDB --database_name mab --bag mab to JSON
 
+$ catmandu export MongoDB --database_name mab 
+    --query '{"year": {"$gt":"2000"}}' --bag mab to JSON
+
 $ catmandu export ElasticSearch --index_name marc --bag marc to JSON
 
 $ catmandu export ElasticSearch --index_name mab --bag mab 
     --query '_id:"http://example.org/1142708-5"'
-
 ```
+
+see https://librecatproject.wordpress.com for more detailed examples 
 
 ---
 class: middle
@@ -556,6 +554,7 @@ $ catmandu count MongoDB --database_name marc --bag marc
     --query '{"dc.creator": "Wall, Larry."}'
 
 $ catmandu count ElasticSearch --index_name mab  --bag mab
+
 $ catmandu count ElasticSearch --index_name mab --bag mab 
     --query 'dc_title:"magazin"'
 
@@ -638,32 +637,6 @@ $ catmandu move ElasticSearch --index_name mab --bag mab
 
 ---
 class: middle
-## CLI - data()
-
-```terminal
-catmandu data [-?hLqv] [long options...]
-
-        -? -h --help         this usage screen
-        -L --load_path
-        --from-store
-        --from-importer
-        --from-bag
-        --count
-        --into-exporter
-        --into-store
-        --into-bag
-        --start
-        --limit
-        --total
-        -q --cql-query
-        --query
-        --fix                fix expression(s) or fix file(s)
-        --replace
-        -v --verbose
-```
-
----
-class: middle
 ## CLI - APIs
 
 ```terminal
@@ -695,8 +668,8 @@ store:
    options:
     index_name: mydb
 
-$ catmandu import JSON to mdb < records.json
-$ catmandu import MARC to els < records.mrc
+$ catmandu import JSON to mdb < perl_books.json
+$ catmandu import MARC to els < perl_books.mrc
 $ catmandu export mdb to JSON
 $ catmandu export els to JSON
 ```
@@ -705,11 +678,14 @@ $ catmandu export els to JSON
 class: middle
 ## Excercise 1
 
-* get data
-* convert data
-* store data
-* query data
-* edit config
+* Convert `perl_books.json` to different formats.
+* Generate a CSV file with columns ID, TITLE, AUTHOR, YEAR from `perl_books.json`.
+* Store `perl_books.json` with MongoDB.
+* Index `perl_books.json` with ElasticSearch.
+* Count all books written by "Wall, Larry" and compare the results from MongoDB and ElasticSearch.
+* Export all records published after year 2000.
+* Delete all records from MongoDB and ElasticSearch.
+* Create a Catmandu config file with "shortcuts" for all stores.
 
 ---
 
@@ -956,8 +932,19 @@ woof! woof!
 class: middle
 ## Excercise 2
 
-* import & fix data
-* export & fix data
+* Create an 'import' fix for `perl_books.json`.
+  * split strings with multiple values (e.g. `author`, `editor`, `keyword`, ...) into arrays.
+  * delete dates from `author` and `editor` fields.
+  * separate publisher place and publisher name from the `publisher` field
+* Import `perl_books.json` with fix.
+* Run queries from Excercise 1 again .
+* Create an 'export' fix to Dublin Core [http://dublincore.org/documents/dces/]
+
+---
+class: middle
+## OAI
+
+...
 
 ---
 class: middle
@@ -980,7 +967,7 @@ class: middle
 ## Convert from RDF
 
 ```terminal
-$ catmandu convert RDF --file ./shared/zdb_resources.rdf to YAML
+$ catmandu convert RDF --file journals.rdf to YAML
 $ catmandu convert RDF --url http://d-nb.info/1001703464 to YAML
 ```
 
@@ -1082,9 +1069,9 @@ class: middle
 
 ```terminal
 $ catmandu convert RDF --file --ns 20140919 
-    ./shared/zdb_resources.rdf to YAML
+    journals.rdf to YAML
 $ catmandu convert RDF --file --ns 20131205 
-    ./shared/zdb_resources.rdf to YAML
+    journals.rdf to YAML
 ```
 
 ---
@@ -1110,7 +1097,7 @@ class: middle
 https://github.com/LibreCat/Catmandu-RDF/wiki/Reading-RDF-Data
 
 ```terminal
-$ catmandu convert RDF --file ./shared/zdb_resources.rdf to YAML
+$ catmandu convert RDF --file journals.rdf to YAML
 $ catmandu convert RDF --url http://d-nb.info/1001703464 to YAML
 ```
 
@@ -1225,9 +1212,9 @@ class: middle
 ## Extensions
 
 ```terminal
-catmandu -I ./lib convert Hello < ./shared/names.csv 
+catmandu -I ./lib convert Hello < names.csv 
 catmandu -D -I ./lib convert Hello --fix "hello_world()" 
-    < ./shared/names.csv
+    < names.csv
 catmandu -I ./lib hello_world --greeting Moin
 ```
 
@@ -1238,6 +1225,8 @@ class: middle center
 http://librecat.org
 
 http://librecat.org/Catmandu/
+
+https://librecatproject.wordpress.com
 
 http://metacpan.org/release/Catmandu
 
