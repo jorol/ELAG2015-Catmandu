@@ -591,7 +591,7 @@ $ catmandu delete MongoDB --database_name mab --bag mab
 $ catmandu delete ElasticSearch --index_name mab --bag mab
 
 $ catmandu delete MongoDB --database_name marc --bag marc 
-    --query '{"dc.creator": "Wall, Larry."}'
+    --query '{"dc.creator": "Wall, Larry"}'
 
 $ catmandu delete ElasticSearch --index_name mab --bag mab 
     --query '_id:"http://example.org/1142708-5"'
@@ -627,7 +627,7 @@ $ catmandu move MongoDB --database_name marc --bag marc to ElasticSearch
     --index_name moved
 
 $ catmandu move MongoDB --database_name marc --bag marc 
-    --query '{"dc.creator": "Wall, Larry."}' 
+    --query '{"dc.creator": "Wall, Larry"}' 
     to ElasticSearch --index_name moved
 
 $ catmandu move ElasticSearch --index_name mab --bag mab 
@@ -667,6 +667,7 @@ store:
    package: ElasticSearch
    options:
     index_name: mydb
+...
 
 $ catmandu import JSON to mdb < perl_books.json
 $ catmandu import MARC to els < perl_books.mrc
@@ -676,13 +677,13 @@ $ catmandu export els to JSON
 
 ---
 class: middle
-## Excercise 1
+## Exercise 1
 
 * Convert `perl_books.json` to different formats.
-* Generate a CSV file with columns ID, TITLE, AUTHOR, YEAR from `perl_books.json`.
+* Generate a CSV file with columns `uid`, `title`, `author` and `year` from `perl_books.json`.
 * Store `perl_books.json` with MongoDB.
 * Index `perl_books.json` with ElasticSearch.
-* Count all books written by "Wall, Larry" and compare the results from MongoDB and ElasticSearch.
+* Count all books written by `Wall, Larry` and compare the results from MongoDB and ElasticSearch.
 * Export all records published after year 2000.
 * Delete all records from MongoDB and ElasticSearch.
 * Create a Catmandu config file with "shortcuts" for all stores.
@@ -930,7 +931,7 @@ woof! woof!
 
 ---
 class: middle
-## Excercise 2
+## Exercise 2
 
 * Create an 'import' fix for `perl_books.json`.
   * split strings with multiple values (e.g. `author`, `editor`, `keyword`, ...) into arrays.
@@ -938,13 +939,19 @@ class: middle
   * separate publisher place and publisher name from the `publisher` field
 * Import `perl_books.json` with fix.
 * Run queries from Excercise 1 again .
-* Create an 'export' fix to Dublin Core [http://dublincore.org/documents/dces/]
+* Create an 'export' fix to Dublin Core [http://dublincore.org/documents/dces/].
 
 ---
 class: middle
 ## OAI
 
 ...
+
+---
+class: middle
+## Exercise 3
+
+* Build your own OAI server.
 
 ---
 class: middle
@@ -1105,7 +1112,7 @@ $ catmandu convert RDF --url http://d-nb.info/1001703464 to YAML
 
 ---
 class: middle
-## Excercise 3
+## Exercise 4
 
 * export data to RDF
 
