@@ -1,0 +1,33 @@
+---
+store:
+  mdb:
+   package: MongoDB
+   options:
+    database_name: books
+    default_bag: perl
+    host: 127.0.0.1
+  ela:
+   package: ElasticSearch
+   options:
+    index_name: books
+    default_bag: perl
+    host: 127.0.0.1
+importer:
+  books:
+    package: JSON
+    options:
+      multiline: 1
+      fix: 'import.fix'
+exporter:
+  csv:
+    package: CSV
+    options:
+      fix: 'csv.fix'
+      file: 'perl_books.csv'
+      fields: 'uid,title,author,year'
+  dc:
+    package: XML
+    options:
+      fix: 'export.fix'
+      directory: '.'
+...

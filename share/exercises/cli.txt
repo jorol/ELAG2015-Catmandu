@@ -1,0 +1,24 @@
+# Exercise 1
+# convert to different formats
+catmandu convert JSON --multiline 1 to YAML < perl_books.json
+catmandu convert JSON --multiline 1 to XML < perl_books.json
+# generate CSV file
+catmandu convert JSON --multiline 1 to CSV --fields uid,title,author,year < perl_books.json
+# import to stores
+catmandu import JSON --multiline 1 to MongoDB --database_name books --bag perl < perl_books.json
+catmandu import JSON --multiline 1 to ElasticSearch --index_name books --bag perl < perl_books.json
+# count records
+catmandu count MongoDB --database_name books --bag perl --query '{"author":"Wall, Larry"}'
+catmandu count ElasticSearch --index_name books --bag perl --query 'author: "Wall, Larry"'
+# export records
+catmandu export MongoDB --database_name books --bag perl --query '{"year":{"$gt":"2000"}}'
+# delete records
+catmandu delete MongoDB --database_name books --bag perl
+catmandu delete ElasticSearch --index_name books --bag perl
+# Exercise 2
+# import with fix
+catmandu import books to mdb < ../perl_books.json
+catmandu import books to ela < ../perl_books.json
+# export with fix
+catmandu export mdb to dc < ../perl_books.json
+catmandu export ela to dc < ../perl_books.json

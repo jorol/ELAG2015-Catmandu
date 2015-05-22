@@ -1,0 +1,2 @@
+# csv fix
+join_field(author, '; ')
