@@ -439,6 +439,21 @@ See https://gbv.github.io/aREF/ and https://metacpan.org/pod/RDF::aREF
 
 ---
 class: middle
+## CLI - convert()
+
+```cmd
+$ catmandu convert JSON --multiline 1 to Stat 
+    --keys edition,isbn,year --as Table < perl_books.json
+| _id     | count | max | mean | median | min | stdev | variance |
+|---------|-------|-----|------|--------|-----|-------|----------|
+| edition | 79    | 1   | 0.79 | 1      | 0   | 0.41  | 0.17     |
+| isbn    | 95    | 1   | 0.95 | 1      | 0   | 0.22  | 0.05     |
+| year    | 98    | 1   | 0.98 | 1      | 0   | 0.14  | 0.02     |
+
+```
+
+---
+class: middle
 ## CLI - import()
 
 ```terminal
