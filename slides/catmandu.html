@@ -699,7 +699,7 @@ class: middle
 * Store `perl_books.json` with MongoDB.
 * Index `perl_books.json` with ElasticSearch.
 * Count all books written by `Wall, Larry` and compare the results from MongoDB and ElasticSearch.
-* Export all records published after year 2000.
+* Export all records published after `year` 2000.
 * Delete all records from MongoDB and ElasticSearch.
 * Create a Catmandu config file with "shortcuts" for all stores.
 
@@ -946,14 +946,31 @@ woof! woof!
 
 ---
 class: middle
+## Fix - Binds
+
+```terminal
+$ cat custom.fix
+do benchmark(output => /dev/stderr)
+    custom_fix()
+end
+$ catmandu convert MARC --fix custom.fix < perl_books.mrc
+elapsed   command             calls    sec/comm
+------------------------------------------------------------
+0.000006  Catmandu::Fix::foo  1 times  0.000006 secs/command
+
+```
+
+---
+class: middle
 ## Exercise 2
 
 * Create an 'import' fix for `perl_books.json`.
   * split strings with multiple values (e.g. `author`, `editor`, `keyword`, ...) into arrays.
   * delete dates from `author` and `editor` fields.
-  * separate publisher place and publisher name from the `publisher` field
+  * separate publisher place and publisher name from the `publisher` field.
+  * create a dictionary for `languages`.
 * Import `perl_books.json` with fix.
-* Run queries from Excercise 1 again .
+* Run queries from Excercise 1 again.
 * Create an 'export' fix to Dublin Core [http://dublincore.org/documents/dces/].
 
 ---
