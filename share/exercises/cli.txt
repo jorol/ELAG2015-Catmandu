@@ -9,16 +9,24 @@ catmandu import JSON --multiline 1 to MongoDB --database_name books --bag perl <
 catmandu import JSON --multiline 1 to ElasticSearch --index_name books --bag perl < perl_books.json
 # count records
 catmandu count MongoDB --database_name books --bag perl --query '{"author":"Wall, Larry"}'
+1
 catmandu count ElasticSearch --index_name books --bag perl --query 'author: "Wall, Larry"'
+7
 # export records
 catmandu export MongoDB --database_name books --bag perl --query '{"year":{"$gt":"2000"}}'
+catmandu export ElasticSearch --index_name books --bag perl --cql_query 'year > 2000'
 # delete records
 catmandu delete MongoDB --database_name books --bag perl
 catmandu delete ElasticSearch --index_name books --bag perl
 # Exercise 2
 # import with fix
-catmandu import books to mdb < ../perl_books.json
-catmandu import books to ela < ../perl_books.json
+catmandu import books to mdb < perl_books.json
+catmandu import books to ela < perl_books.json
+# count records
+catmandu count mdb --query '{"author":"Wall, Larry"}'
+7
+catmandu count ela --query 'author: "Wall, Larry"'
+7
 # export with fix
-catmandu export mdb to dc < ../perl_books.json
-catmandu export ela to dc < ../perl_books.json
+catmandu export mdb to dc < perl_books.json
+catmandu export ela to dc < perl_books.json
