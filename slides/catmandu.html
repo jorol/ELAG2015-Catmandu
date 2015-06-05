@@ -961,8 +961,7 @@ $ cpanm --sudo install Dancer::Plugin::Catmandu::OAI
 class: middle
 ## We need
 
-* <DATA>
-* ... within a Catmandu store
+* `<DATA>` within a Catmandu store
 
 ```terminal
 $ cd oai_server
@@ -1005,12 +1004,24 @@ class: middle
   xmlns:dc="http://purl.org/dc/elements/1.1/"
   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
   xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
-[% FOREACH var IN ['title' 'creator' 'subject' 'description' 'publisher' 'contributor' 'date' 'type' 'format' 'identifier' 'source' 'language' 'relation' 'coverage' 'rights'] %]
-	[% FOREACH val IN $var %]
-   	<dc:[% var %]>[% val | html %]</dc:[% var %]>
-	[% END %]
-[% END %]
-</oai_dc:dc>
+  [% fields = [
+    'dc_title'
+    'dc_date'
+    'dc_subject'
+    'dc_creator'
+    'dc_publisher'
+    'dc_publisher'
+    'dc_contributor'
+    'dc_identifer'
+    'dc_format'
+    'dc_language'
+  ] %]
+  [% FOREACH var IN fields %]
+  	[% FOREACH val IN $var %]
+     	<dc:[% var %]>[% val | html %]</dc:[% var %]>
+  	[% END %]
+  [% END %]
+  </oai_dc:dc>
 ```
 
 ---
@@ -1040,7 +1051,26 @@ plugins:
         metadataNamespace: "http://www.openarchives.org/OAI/2.0/oai_dc/"
         template: oai_dc.tt
         fix:
-          - nothing()
+          - ../share/exercises/export.fix
+```
+
+---
+class: middle
+## config file II
+```yaml
+metadata_formats:
+  -
+    metadataPrefix: oai_dc
+    schema: "http://www.openarchives.org/OAI/2.0/oai_dc.xsd"
+    metadataNamespace: "http://www.openarchives.org/OAI/2.0/oai_dc/"
+    template: oai_dc.tt
+    fix:
+      - ../share/exercises/export.fix
+sets:
+  -
+    setSpec: openaccess
+    setName: Open Access
+    cql: 'oa=1'
 ```
 
 ---
@@ -1052,15 +1082,27 @@ $ plackup app.pl
 ```
 and point your browser to
 
+`http://localhost:3000/oai?verb=Identify`
+
+and
+
 `http://localhost:3000/oai?verb=ListRecords&metadataPrefix=oai_dc`
+
+---
+class: middle
+## OAI data service: vice versa
+### check how great your own oai service works
+
+```terminal
+$ catmandu convert OAI --url http://localhost:3000/oai to YAML
+```
 
 ---
 class: middle
 ## Exercise 3
 
 * Modify the config file and check the result with `verb=Identify`
-* Let's add some `sets`: ...
-*
+* Let's add some other `sets` or `metadataFormats`
 
 ---
 class: middle
@@ -1081,11 +1123,14 @@ $ cpanm --sudo install Catmandu::RDF
 
 ---
 class: middle
-## Convert from RDF
+## Reading RDF data
+
+https://github.com/LibreCat/Catmandu-RDF/wiki/Reading-RDF-Data
 
 ```terminal
-$ catmandu convert RDF --file share/journals.rdf to YAML
+$ catmandu convert RDF --file journals.rdf to YAML
 $ catmandu convert RDF --url http://d-nb.info/1001703464 to YAML
+$ catmandu convert RDF --url http://dx.doi.org/10.2474/trol.7.147 to YAML
 ```
 
 ---
@@ -1132,8 +1177,7 @@ class: middle
 catmandu convert YAML to RDF --type ntriples < share/aref.yml
 catmandu convert YAML to RDF --type rdfjson < share/aref.yml
 catmandu convert YAML to RDF --type rdfxml < share/aref.yml
-
-catmandu convert MARC to RDF --fix share/marc2rdf.fix <share/perl_books.mrc
+catmandu convert RDF to RDF --type ntriples < share/journals.rdf
 ```
 
 ---
@@ -1164,62 +1208,6 @@ class: middle
 * append `@lang` for language literals
 * optionally append `@` for literals
 * optionally put URI between `<` and `>`
-
----
-class: middle
-## Multiple URI abbreviations
-
-    dc:title  = http://purl.org/dc/elements/1.1/title
-    dce:title = http://purl.org/dc/elements/1.1/title
-    dct:title = http://purl.org/dc/terms/title
-    dcq:title = http://purl.org/dc/terms/title
-    dcq:title = http://purl.org/dc/qualifiers/1.0/title
-    ...
-
-Solution: tack namespace prefixes
-
----
-class: middle
-## tack namespace prefixes
-
-* Popular namespace prefixes from http://prefix.cc
-* In Perl module RDF:NS: https://metacpan.org/release/RDF-NS
-* tack a date, e.g. 20131205
-
-```terminal
-$ catmandu convert RDF --file journals.rdf --ns 20140919 to YAML
-
-$ catmandu convert RDF --file journals.rdf --ns 20131205 to YAML
-```
-
----
-class: middle
-## tack namespace prefixes in config
-
-In `catmandu.yml`:
-
-```yaml
----
-importer:
-  RDF:
-    package: RDF
-    options:
-      ns: 20140101
-...
-```
-
----
-class: middle
-## Reading RDF data
-
-https://github.com/LibreCat/Catmandu-RDF/wiki/Reading-RDF-Data
-
-```terminal
-$ catmandu convert RDF --file journals.rdf to YAML
-$ catmandu convert RDF --url http://d-nb.info/1001703464 to YAML
-```
-
-`aref_query` fix
 
 ---
 class: middle
