@@ -23,7 +23,7 @@
       body {
         font-family: 'Droid Serif';
         font-size: 20px;
-        color: #777872; 
+        color: #777872;
       }
       h1, h2, h3 {
         font-family: 'Yanone Kaffeesatz';
@@ -46,8 +46,8 @@
         text-decoration: none;
       }
       img {
-      max-width: 800px;    
-      max-height: 600px;    
+      max-width: 800px;
+      max-height: 600px;
       }
       code {
         -moz-border-radius: 5px;
@@ -174,7 +174,7 @@ class: middle
 
 ---
 class: middle
-## Libraries create metadata ... 
+## Libraries create metadata ...
   * bibliographic descriptions
   * holding informations
   * references
@@ -190,7 +190,7 @@ class: middle center
 class: middle
 ## Metadata
 
-... catalogued in library specific formats (MARC, MAB2, PICA, ...) 
+... catalogued in library specific formats (MARC, MAB2, PICA, ...)
 
 ... provided via library specific APIs (OAI, SRU, Z39.50, ...)
 
@@ -214,7 +214,7 @@ class: center middle
 class: middle
 ## Catmandu
 
-... provides an open source set of programming components to build up digital libraries and research services 
+... provides an open source set of programming components to build up digital libraries and research services
 
 ... supports "Extract, Transform, Load" (ETL) processes
 
@@ -241,6 +241,8 @@ class: center middle
 AlephSEQ BibTeX MAB2 MARC MODS PICA
 
 Atom CSV JSON RDF XLS XML YAML
+
+CrossRef ArXiv EuropePMC
 
 ---
 class: center middle
@@ -274,9 +276,9 @@ class: middle
 
 ```terminal
 catmandu <command> [-DIL] [long options...]
-    -D --debug          
-    -L --load_path      
-    -I --lib_path       
+    -D --debug
+    -L --load_path
+    -I --lib_path
 
 Available commands:
 
@@ -292,7 +294,6 @@ Available commands:
          import: import objects into a store
            info: list installed Catmandu modules
            move: move objects to another store
-           repl: interactive shell for Catmandu
 ```
 
 ---
@@ -360,7 +361,7 @@ class: middle
          "1992"
       ],
       ...
-    ] 
+    ]
 }
 ```
 
@@ -391,10 +392,10 @@ class: middle
 ## CLI - convert()
 
 ```terminal
-$ catmandu convert CSV to YAML < berlin_eu_elections_2014.csv 
+$ catmandu convert CSV to YAML < berlin_eu_elections_2014.csv
 
-$ catmandu convert CSV to CSV --fields Wahlbezirk,DKP,NPD 
-    < berlin_eu_elections.csv 
+$ catmandu convert CSV to CSV --fields Wahlbezirk,DKP,NPD
+    < berlin_eu_elections.csv
 ```
 
 ---
@@ -402,12 +403,12 @@ class: middle
 ## CLI - convert()
 
 ```terminal
-$ catmandu convert MAB2 --fix mab2rdf.fix to CSV 
-    --file mab2.csv --fields dc_identifier,dc_title,dc_language 
+$ catmandu convert MAB2 --fix mab2rdf.fix to CSV
+    --file mab2.csv --fields dc_identifier,dc_title,dc_language
     < journals.mab2.dat
 
-$ catmandu convert MAB2 --fix mab2rdf.fix to XLS 
-    --file mab2.xls --fields dc_identifier,dc_title,dc_language 
+$ catmandu convert MAB2 --fix mab2rdf.fix to XLS
+    --file mab2.xls --fields dc_identifier,dc_title,dc_language
     < journals.mab2.dat
 ```
 
@@ -419,7 +420,7 @@ class: middle
 $ cat marc.tt
 [% _id %] [% dc.creator.0 %]: [% dc.title %]
 
-$ catmandu convert MARC --fix .marc.fix to Template 
+$ catmandu convert MARC --fix .marc.fix to Template
     --template marc.tt < perl_books.mrc
 ```
 
@@ -429,9 +430,9 @@ class: middle
 
 ```cmd
 catmandu convert RDF --file journals.rdf to YAML
-catmandu convert MAB2 --type RAW --fix mab2rdf.fix to RDF 
+catmandu convert MAB2 --type RAW --fix mab2rdf.fix to RDF
     --type ttl < journals.mab2.dat
-catmandu convert MAB2 --type RAW --fix mab2rdf.fix to RDF 
+catmandu convert MAB2 --type RAW --fix mab2rdf.fix to RDF
     --type xml < journals.mab2.dat
 ```
 
@@ -461,7 +462,7 @@ catmandu import [-?hLv] [long options...]
 
 examples:
 
-catmandu import YAML --file books.yml to MongoDB 
+catmandu import YAML --file books.yml to MongoDB
     --database_name items --bag book
 
 options:
@@ -482,20 +483,20 @@ class: middle
 ## CLI - import()
 
 ```terminal
-$ catmandu import MARC --type RAW --fix marc.fix to MongoDB 
+$ catmandu import MARC --type RAW --fix marc.fix to MongoDB
     --database_name marc --bag marc < perl_books.mrc
 
-$ catmandu import MAB2 --fix mab2rdf.fix to MongoDB 
+$ catmandu import MAB2 --fix mab2rdf.fix to MongoDB
     --database_name mab --bag mab  < journals.mab2.dat
 
 $ mongo
 > use marc
 > db.marc.find()
 
-$ catmandu import MARC --type RAW --fix marc.fix to ElasticSearch 
+$ catmandu import MARC --type RAW --fix marc.fix to ElasticSearch
     --index_name marc --bag marc < perl_books.mrc
 
-$ catmandu import MAB2 --fix mab2rdf.fix to ElasticSearch 
+$ catmandu import MAB2 --fix mab2rdf.fix to ElasticSearch
     --index_name mab --bag mab < journals.mab2.dat
 
 $ curl 'http://localhost:9200/mab/_search?q=*'
@@ -528,16 +529,16 @@ class: middle
 ```terminal
 $ catmandu export MongoDB --database_name mab --bag mab to JSON
 
-$ catmandu export MongoDB --database_name mab 
+$ catmandu export MongoDB --database_name mab
     --query '{"year": {"$gt":"2000"}}' --bag mab to JSON
 
 $ catmandu export ElasticSearch --index_name marc --bag marc to JSON
 
-$ catmandu export ElasticSearch --index_name mab --bag mab 
+$ catmandu export ElasticSearch --index_name mab --bag mab
     --query '_id:"http://example.org/1142708-5"'
 ```
 
-see https://librecatproject.wordpress.com for more detailed examples 
+see https://librecatproject.wordpress.com for more detailed examples
 
 ---
 class: middle
@@ -548,7 +549,7 @@ catmandu count [-?hLq] [long options...]
 
 examples:
 
-catmandu count ElasticSearch --index_name shop --bag products 
+catmandu count ElasticSearch --index_name shop --bag products
     --query 'brand:Acme'
 
 options:
@@ -565,15 +566,15 @@ class: middle
 ```terminal
 $ catmandu count MongoDB --database_name mab --bag mab
 
-$ catmandu count MongoDB --database_name marc --bag marc 
+$ catmandu count MongoDB --database_name marc --bag marc
     --query '{"dc.creator": "Wall, Larry."}'
 
 $ catmandu count ElasticSearch --index_name mab  --bag mab
 
-$ catmandu count ElasticSearch --index_name mab --bag mab 
+$ catmandu count ElasticSearch --index_name mab --bag mab
     --query 'dc_title:"magazin"'
 
-$ catmandu count ElasticSearch --index_name marc --bag marc 
+$ catmandu count ElasticSearch --index_name marc --bag marc
     --query 'dc.creator:"wall"'
 ```
 
@@ -586,7 +587,7 @@ catmandu delete [-?hLq] [long options...]
 
 examples:
 
-catmandu delete ElasticSearch --index_name items 
+catmandu delete ElasticSearch --index_name items
     --bag book -q 'title:"Programming Perl"'
 
 options:
@@ -605,10 +606,10 @@ $ catmandu delete MongoDB --database_name mab --bag mab
 
 $ catmandu delete ElasticSearch --index_name mab --bag mab
 
-$ catmandu delete MongoDB --database_name marc --bag marc 
+$ catmandu delete MongoDB --database_name marc --bag marc
     --query '{"dc.creator": "Wall, Larry"}'
 
-$ catmandu delete ElasticSearch --index_name mab --bag mab 
+$ catmandu delete ElasticSearch --index_name mab --bag mab
     --query '_id:"http://example.org/1142708-5"'
 ```
 
@@ -621,7 +622,7 @@ catmandu move [-?hLqv] [long options...]
 
 examples:
 
-catmandu move MongoDB --database_name items --bag book 
+catmandu move MongoDB --database_name items --bag book
     to ElasticSearch --index_name items --bag book
 
 options:
@@ -638,15 +639,15 @@ class: middle
 ## CLI - move()
 
 ```terminal
-$ catmandu move MongoDB --database_name marc --bag marc to ElasticSearch 
+$ catmandu move MongoDB --database_name marc --bag marc to ElasticSearch
     --index_name moved
 
-$ catmandu move MongoDB --database_name marc --bag marc 
-    --query '{"dc.creator": "Wall, Larry"}' 
+$ catmandu move MongoDB --database_name marc --bag marc
+    --query '{"dc.creator": "Wall, Larry"}'
     to ElasticSearch --index_name moved
 
-$ catmandu move ElasticSearch --index_name mab --bag mab 
-    --query '_id:"http://example.org/1142708-5"' 
+$ catmandu move ElasticSearch --index_name mab --bag mab
+    --query '_id:"http://example.org/1142708-5"'
     to ElasticSearch --index_name selected --bag selected
 ```
 
@@ -657,12 +658,12 @@ class: middle
 ```terminal
 $ catmandu convert OAI --url http://pub.uni-bielefeld.de/oai to JSON
 
-$ catmandu convert SRU --base http://sru.gbv.de/gvk --recordSchema picaxml 
-    --parser picaxml --query "pica.iss=0939-4362" to JSON    
+$ catmandu convert SRU --base http://sru.gbv.de/gvk --recordSchema picaxml
+    --parser picaxml --query "pica.iss=0939-4362" to JSON
 
 $ catmandu convert getJSON --from http://example.org/alice.json to YAML
 
-$ catmandu convert getJSON --dry 1 --url http://{domain}/robots.txt 
+$ catmandu convert getJSON --dry 1 --url http://{domain}/robots.txt
     < domains
 ```
 
@@ -831,7 +832,7 @@ class: middle
 ```perl
 # {format => 'MARC21'}
 replace_all('format', '\d', '');
-# {format => 'MARC'}    
+# {format => 'MARC'}
 
 # {id => ['123-4', '567-X']}
 replace_all('id.*', '-[0-9xX]$', '');
@@ -914,7 +915,7 @@ class: middle
 collapse();
 
 # Expand flat hash to deep nested hash
-expand();               
+expand();
 
 # Clone the perl hash and work on the clone
 clone();
@@ -925,7 +926,7 @@ class: middle
 ## Fix - cmd
 
 ```perl
-# Use an external program that can read JSON 
+# Use an external program that can read JSON
 # from stdin and write JSON to stdout
 cmd("java MyClass");
 ```
@@ -975,19 +976,170 @@ class: middle
 
 ---
 class: middle
-## OAI
+## Real world application:
+## OAI data service
 
-...
+---
+class: middle
+## Requirements
+
+Let's get some perl modules:
+```terminal
+$ cpanm --sudo install Template Dancer Plackup
+$ cpanm --sudo install Dancer::Plugin::Catmandu::OAI
+```
+
+---
+class: middle
+## We need
+
+* `<DATA>` within a Catmandu store
+
+```terminal
+$ cd oai_server
+$ catmandu import JSON to oai < ../share/perl_books.json
+```
+
+* a tiny web server: `oai_server/app.pl`
+* a configuration file: `oai_server/catmandu.yml`
+* an OAI-DC output template: `oai_server/oai_dc.tt`
+
+---
+class: middle
+## Setting up your web server
+
+```perl
+#!/usr/bin/env perl
+
+use Dancer;
+use Catmandu;
+use Dancer::Plugin::Catmandu::OAI;
+
+Catmandu->load;
+
+oai_provider '/oai';
+
+get '/check' => sub {
+  return "I'm running fine!";
+};
+
+dance;
+```
+
+---
+class: middle
+## OAI-DC template
+
+```html
+<oai_dc:dc xmlns="http://www.openarchives.org/OAI/2.0/oai_dc/"
+  xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/"
+  xmlns:dc="http://purl.org/dc/elements/1.1/"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+  [% fields = [
+    'dc_title'
+    'dc_date'
+    'dc_subject'
+    'dc_creator'
+    'dc_publisher'
+    'dc_publisher'
+    'dc_contributor'
+    'dc_identifer'
+    'dc_format'
+    'dc_language'
+  ] %]
+  [% FOREACH var IN fields %]
+  	[% FOREACH val IN $var %]
+     	<dc:[% var %]>[% val | html %]</dc:[% var %]>
+  	[% END %]
+  [% END %]
+  </oai_dc:dc>
+```
+
+---
+class: middle
+## Putting things together: config file
+
+```yaml
+plugins:
+  'Catmandu::OAI':
+    store: oai
+    bag: publication
+    datestamp_field: datestamp
+    repositoryName: "My OAI DataProvider"
+    uri_base: "http://oai.service.com/oai"
+    adminEmail: me@example.com
+    earliestDatestamp: "1970-01-01T00:00:01Z"
+    deletedRecord: persistent
+    repositoryIdentifier: oai.service.com
+    cql_filter: "datestamp>2014-12-01T00:00:00Z"
+    limit: 200
+    delimiter: ":"
+    sampleIdentifier: "oai:oai.service.com:1585315"
+    metadata_formats:
+      -
+        metadataPrefix: oai_dc
+        schema: "http://www.openarchives.org/OAI/2.0/oai_dc.xsd"
+        metadataNamespace: "http://www.openarchives.org/OAI/2.0/oai_dc/"
+        template: oai_dc.tt
+        fix:
+          - ../share/exercises/export.fix
+```
+
+---
+class: middle
+## config file II
+```yaml
+metadata_formats:
+  -
+    metadataPrefix: oai_dc
+    schema: "http://www.openarchives.org/OAI/2.0/oai_dc.xsd"
+    metadataNamespace: "http://www.openarchives.org/OAI/2.0/oai_dc/"
+    template: oai_dc.tt
+    fix:
+      - ../share/exercises/export.fix
+sets:
+  -
+    setSpec: openaccess
+    setName: Open Access
+    cql: 'oa=1'
+```
+
+---
+class: middle
+## How to start the web server
+
+```terminal
+$ plackup app.pl
+```
+and point your browser to
+
+`http://localhost:3000/oai?verb=Identify`
+
+and
+
+`http://localhost:3000/oai?verb=ListRecords&metadataPrefix=oai_dc`
+
+---
+class: middle
+## OAI data service: vice versa
+### check how great your own oai service works
+
+```terminal
+$ catmandu convert OAI --url http://localhost:3000/oai to YAML
+```
 
 ---
 class: middle
 ## Exercise 3
 
-* Build your own OAI server.
+* Modify the config file and check the result with `verb=Identify`
+* Let's add some other `sets` or `metadataFormats`
 
 ---
 class: middle
 ## Processing RDF with Catmandu
+### adopted from Jakob Voss
 
 Unfortunately Catmandu-RDF at the virtual machine is broken. Fix with:
 
@@ -1003,11 +1155,14 @@ $ cpanm --sudo install Catmandu::RDF
 
 ---
 class: middle
-## Convert from RDF
+## Reading RDF data
+
+https://github.com/LibreCat/Catmandu-RDF/wiki/Reading-RDF-Data
 
 ```terminal
 $ catmandu convert RDF --file journals.rdf to YAML
 $ catmandu convert RDF --url http://d-nb.info/1001703464 to YAML
+$ catmandu convert RDF --url http://dx.doi.org/10.2474/trol.7.147 to YAML
 ```
 
 ---
@@ -1043,7 +1198,7 @@ see https://gbv.github.io/aREF/ and https://metacpan.org/pod/RDF::aREF
 ```
 
 ```terminal
-catmandu convert YAML to RDF < shared/aref.yml
+catmandu convert YAML to RDF < share/aref.yml
 ```
 
 ---
@@ -1051,9 +1206,10 @@ class: middle
 ## Multiple forms of serialization
 
 ```terminal
-catmandu convert YAML to RDF --type ntriples < shared/aref.yml
-catmandu convert YAML to RDF --type rdfjson < shared/aref.yml
-catmandu convert YAML to RDF --type rdfxml < shared/aref.yml
+catmandu convert YAML to RDF --type ntriples < share/aref.yml
+catmandu convert YAML to RDF --type rdfjson < share/aref.yml
+catmandu convert YAML to RDF --type rdfxml < share/aref.yml
+catmandu convert RDF to RDF --type ntriples < share/journals.rdf
 ```
 
 ---
@@ -1071,76 +1227,19 @@ class: middle
 ```
 
 ```terminal
-catmandu convert YAML to JSON --pretty 1 < shared/aref.yml
+catmandu convert YAML to JSON --pretty 1 < share/aref.yml
 ```
 
 ---
 class: middle
 ## Mapping between RDF graphs and aREF items
 
-* abbreviate URIs with underscore 
+* abbreviate URIs with underscore
   (`dc_title`, `foaf_Person`...)
 * append `^` and datatype for data literals
 * append `@lang` for language literals
 * optionally append `@` for literals
 * optionally put URI between `<` and `>`
-
----
-class: middle
-## Multiple URI abbreviations
-
-    dc:title  = http://purl.org/dc/elements/1.1/title
-    dce:title = http://purl.org/dc/elements/1.1/title
-    dct:title = http://purl.org/dc/terms/title
-    dcq:title = http://purl.org/dc/terms/title
-    dcq:title = http://purl.org/dc/qualifiers/1.0/title
-    ...
-
-Solution: tack namespace prefixes
-
----
-class: middle
-## tack namespace prefixes
-
-* Popular namespace prefixes from http://prefix.cc
-* In Perl module RDF:NS: https://metacpan.org/release/RDF-NS
-* tack a date, e.g. 20131205
-
-```terminal
-$ catmandu convert RDF --file --ns 20140919 
-    journals.rdf to YAML
-$ catmandu convert RDF --file --ns 20131205 
-    journals.rdf to YAML
-```
-
----
-class: middle
-## tack namespace prefixes in config
-
-In `catmandu.yml`:
-
-```yaml
----
-importer:
-  RDF:
-    package: RDF
-    options:
-      ns: 20140101
-...
-```
-
----
-class: middle
-## Reading RDF data
-
-https://github.com/LibreCat/Catmandu-RDF/wiki/Reading-RDF-Data
-
-```terminal
-$ catmandu convert RDF --file journals.rdf to YAML
-$ catmandu convert RDF --url http://d-nb.info/1001703464 to YAML
-```
-
-`aref_query` fix
 
 ---
 class: middle
@@ -1171,7 +1270,7 @@ class: middle
 
 ---
 class: middle
-## CMD
+## Importer
 
 ```perl
 package Catmandu::Importer::Hello;
@@ -1223,13 +1322,13 @@ class: middle
 ```perl
 package Catmandu::Cmd::hello_world;
 use parent 'Catmandu::Cmd';
- 
+
 sub command_opt_spec {
    (
        [ "greeting|g=s", "provide a greeting text" ],
    );
 }
- 
+
 sub description {
    <<EOS;
 examples:
@@ -1237,13 +1336,13 @@ catmandu hello_world --greeting "Hoi"
 options:
 EOS
 }
- 
+
 sub command {
    my ($self, $opts, $args) = @_;
    my $greeting = $opts->greeting // 'Hello';
    print "$greeting, World!\n"
 }
- 
+
 1;
 ```
 ---
@@ -1251,8 +1350,8 @@ class: middle
 ## Extensions
 
 ```terminal
-catmandu -I ./lib convert Hello < names.csv 
-catmandu -D -I ./lib convert Hello --fix "hello_world()" 
+catmandu -I ./lib convert Hello < names.csv
+catmandu -D -I ./lib convert Hello --fix "hello_world()"
     < names.csv
 catmandu -I ./lib hello_world --greeting Moin
 ```
