@@ -8,4 +8,5 @@ split_field(isbn, '; ')
 split_field(publisher, ' : ')
 copy_field(publisher.0,publisherPlace)
 copy_field(publisher.1,publisherName)
+lookup('language', 'dict_language.csv');
 remove_field(publisher)

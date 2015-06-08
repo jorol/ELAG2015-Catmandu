@@ -208,7 +208,7 @@ class: center middle
 
 ... is an open collaboration of the three university libraries of **Bielefeld**, **Gent** and **Lund**
 
-... joined by developers of other institutions
+... joined by developers from other institutions
 
 ---
 class: middle
@@ -232,7 +232,7 @@ class: middle
 
 * **Exporters** are Catmandu packages to export items from an application.
 
-* **Iterables** - Every stream of data, if it comes from Iterators, Fixes or Stores is an iterator. With Iterators the memory consumption of your program is low: you can process Gigabytes, Terabytes of input data without ever running out of memory.
+* **Iterables** - Every stream of data, if it comes from Iterators, Fixes or Stores, is an iterator. With Iterators the memory consumption of your program is low: you can process Gigabytes, Terabytes of input data without ever running out of memory.
 
 ---
 class: center middle
@@ -678,11 +678,13 @@ store:
   mdb:
    package: MongoDB
    options:
-    database_name: mydb
+    database_name: books
+    bag: perl
   els:
    package: ElasticSearch
    options:
-    index_name: mydb
+    index_name: books
+    bag: perl
 ...
 
 $ catmandu import JSON to mdb < perl_books.json
@@ -695,7 +697,7 @@ $ catmandu export els to JSON
 class: middle
 ## Exercise 1
 
-* Convert `perl_books.json` to different formats.
+* Convert `perl_books.json` and `perl_books.mrc` to different formats.
 * Generate a CSV file with columns `uid`, `title`, `author` and `year` from `perl_books.json`.
 * Store `perl_books.json` with MongoDB.
 * Index `perl_books.json` with ElasticSearch.
@@ -973,7 +975,7 @@ class: middle
 * Import `perl_books.json` with fix.
 * Run queries from Excercise 1 again.
 * Create an 'export' fix to Dublin Core [http://dublincore.org/documents/dces/].
-
+* Create a simple fix for `perl_books.mrc`.
 ---
 class: middle
 ## Real world application:
@@ -1350,7 +1352,7 @@ class: middle
 ## Extensions
 
 ```terminal
-catmandu -I ./lib convert Hello < names.csv
+catmandu -I ./lib convert Hello < berlin_names.csv
 catmandu -D -I ./lib convert Hello --fix "hello_world()"
     < names.csv
 catmandu -I ./lib hello_world --greeting Moin

@@ -2,6 +2,8 @@
 # convert to different formats
 catmandu convert JSON --multiline 1 to YAML < perl_books.json
 catmandu convert JSON --multiline 1 to XML < perl_books.json
+catmandu convert MARC to YAML < perl_books.mrc
+catmandu convert MARC --type RAW to JSON < perl_books.mrc
 # generate CSV file
 catmandu convert JSON --multiline 1 to CSV --fields uid,title,author,year < perl_books.json
 # import to stores
@@ -28,5 +30,5 @@ catmandu count mdb --query '{"author":"Wall, Larry"}'
 catmandu count ela --query 'author: "Wall, Larry"'
 7
 # export with fix
-catmandu export mdb to dc < perl_books.json
-catmandu export ela to dc < perl_books.json
+catmandu export mdb to dc
+catmandu export ela to dc
